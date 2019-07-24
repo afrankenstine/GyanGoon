@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-import 'package:gyangoon/homeScreen.dart';
-import "package:flare_flutter/flare_actor.dart";
-import 'menuScreen1.dart';
-import 'menuScreen2.dart';
+//import 'package:gyangoon/homeScreen.dart';
+//import "package:flare_flutter/flare_actor.dart";
+//import 'menuScreen1.dart';
+//import 'menuScreen2.dart';
 import 'writeScreen.dart';
 
 class videoScreen extends StatefulWidget {
