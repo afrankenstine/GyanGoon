@@ -291,41 +291,8 @@ class _MenuScreen2State extends State<MenuScreen2> {
                   ),
                 ),
 
-//                Expanded(
-//                  child: Container(
-//                    margin: EdgeInsets.only(
-//                        top: MediaQuery.of(context).size.height * 0.075, right: 10.0,left: 10.0 ),
-//                    child: ClipRRect(
-//                      borderRadius: BorderRadius.circular(40),
-//                      child: ButtonTheme(
-//                        minWidth: 60.0,
-//                        child: RaisedButton(
-//                          highlightElevation: 20.0,
-//                          highlightColor: Colors.blue[900],
-//                          animationDuration: Duration(milliseconds: 400),
-////                    minWidth:200,
-//                          onPressed: () {
-////                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
-//                          },
-////                shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-////                  shape: StadiumBorder(),
-//                          textColor: Colors.white,
-//                          padding: const EdgeInsets.all(0.0),
-//                          child: Container(
-////
-//                            padding: const EdgeInsets.only(
-//                                left: 20.0, right: 15.0, top: 10, bottom: 10),
-//                            child: Center(
-//                              child: Text('ष-ज्ञ',
-//                                  style: TextStyle(fontSize: 40)),
-//                            ),
-////                  shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-//                          ),
-//                        ),
-//                      ),
-//                    ),
-//                  ),
-//                ),
+
+
 
                 Expanded(
                   child: Container(
