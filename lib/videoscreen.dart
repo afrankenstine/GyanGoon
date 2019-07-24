@@ -127,8 +127,7 @@ class _videoScreenState extends State<videoScreen> {
           )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-//          createVideo();
-//          playerController.play();
+
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => WriteScreen()),
