@@ -1,7 +1,10 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
+import 'screenshot.dart';
+//import 'package:image_gallery_saver/image_gallery_saver.dart';
 
 class WriteScreen extends StatefulWidget {
   @override
@@ -125,7 +128,7 @@ class _WriteScreenState extends State<WriteScreen> {
                   replacement:Container(
                     height: MediaQuery.of(context).size.height* 0.5,
                     padding: EdgeInsets.all(20),
-                    color: Colors.blue,
+                    color: Colors.white.withOpacity(0.5),
                   ),
               ),
             )
