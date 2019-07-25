@@ -75,8 +75,8 @@ class _WriteScreenState extends State<WriteScreen> {
                   RenderBox object = context.findRenderObject();
                   Offset _localPosition = object
                       .globalToLocal(details.globalPosition) -
-                      Offset(MediaQuery.of(context).size.width * 0.05,
-                          MediaQuery.of(context).size.height * 0.45);
+                      Offset(MediaQuery.of(context).size.width * 0.035,
+                          MediaQuery.of(context).size.height * 0.41);
                   _points = List.from(_points)..add(_localPosition);
                 });
               },

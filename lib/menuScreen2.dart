@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'videoscreen.dart';
+import 'custom_transition.dart';
 
 class MenuScreen2 extends StatefulWidget {
   @override
@@ -58,7 +59,7 @@ class _MenuScreen2State extends State<MenuScreen2> {
                           onPressed: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => videoScreen()),
+                              CustomRoute(builder: (context) => videoScreen()),
                             );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },

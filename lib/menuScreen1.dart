@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'menuScreen2.dart';
+import 'rotation_route.dart';
+import 'package:flutter/cupertino.dart';
+import 'custom_transition.dart';
 
 class MenuScreen1 extends StatefulWidget {
   @override
@@ -7,6 +10,9 @@ class MenuScreen1 extends StatefulWidget {
 }
 
 class _MenuScreen1State extends State<MenuScreen1> {
+  @override
+// A relatively rigorous eyeball estimation.
+  Duration get transitionDuration => const Duration(milliseconds: 1000);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,7 +62,7 @@ class _MenuScreen1State extends State<MenuScreen1> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => MenuScreen2()),
+                        CustomRoute(builder: (context) => MenuScreen2()),
                       );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                     },

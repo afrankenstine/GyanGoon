@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'menuScreen1.dart';
 import 'buttonanimation.dart';
+import 'custom_transition.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -55,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
 //                      Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MenuScreen1()),
+                          CustomRoute(builder: (context) => MenuScreen1()),
                         );
                       },
 //                shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),

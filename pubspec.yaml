@@ -15,6 +15,7 @@ dependencies:
   flame: ^0.14.2
   provider: ^3.0.0
   path_provider: ^1.1.0
+  audioplayers: ^0.13.1
 #  image_gallery_saver: ^1.1.0
 
 flutter:
@@ -30,6 +31,7 @@ flutter:
   - KA.flr
   - bgm.mp3
   - press.mp3
+  - bgm.ogg
 
 
 

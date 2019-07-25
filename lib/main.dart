@@ -7,10 +7,31 @@ import 'menuScreen1.dart';
 import 'menuScreen2.dart';
 import 'videoscreen.dart';
 import 'writeScreen.dart';
+import 'custom_transition.dart';
+import 'bgm.dart';
+import 'package:flame/flame.dart';
+import 'package:flame/util.dart';
+import 'package:audioplayers/audioplayers.dart';
+//import 'package:audioplayers/audioplayers.dart';
+
+import 'package:audioplayers/audio_cache.dart';
 
 
 
-void main() {
+
+void main() async {
+//  Flame.audio.disableLog();
+//  await Flame.audio.loadAll(<String>[
+//    'assets/bgm.ogg',
+//  ]);
+
+//  AudioPlayer CustomBGM;
+////  CustomBGM = await Flame.audio.loop('assets/bgm.ogg', volume: .25);
+//  CustomBGM= await AudioCache().loop('assets/bgm.ogg', volume: .25);
+
+
+
+
   runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
     title: 'GyanGoon',
@@ -23,7 +44,15 @@ void main() {
       '/WriteScreen' : (BuildContext context) => WriteScreen(),
 
     },
+
   ));
+  BGM.attachWidgetBindingListener();
+//  await BGM.add('assets/bgm.ogg');
+//  BGM.play(0);
+
+//  AudioPlayer CustomBGM;
+////  CustomBGM = await Flame.audio.loop('assets/bgm.ogg', volume: .25);
+//  CustomBGM= await AudioCache().loop('assets/bgm.ogg', volume: .25);
 }
 
 class SplashScreen extends StatefulWidget {
@@ -32,15 +61,33 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  AudioPlayer CustomBGM;
+//  CustomBGM = await Flame.audio.loop('assets/bgm.ogg', volume: .25);
+  Future loadMusic() async {
+
+//    CustomBGM = await AudioCache().loop('bgm.ogg',volume: .25);
+
+    await BGM.add('bgm.ogg');
+    print("Music looped");
+    BGM.play(0);
+  }
+//  CustomBGM= await AudioCache().loop('assets/bgm.ogg', volume: .25);
+
+
+
   startTime() async {
-    var _duration = new Duration(seconds: 5);
-    return new Timer(_duration, navigationPage);
+//    BGM.play(0);
+    var _duration = Duration(seconds: 5);
+    return Timer(_duration, navigationPage);
   }
 
+
+
   void navigationPage() {
+//    BGM.play(0);
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => HomeScreen()),
+      CustomRoute(builder: (context) => HomeScreen()),
     );
 //    Navigator.of(context).pushReplacementNamed('/HomeScreen');
   }
@@ -49,13 +96,22 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     startTime();
+    loadMusic();
+//    await BGM.add('assets/bgm.ogg');
+//  BGM.play(0);
   }
 
   @override
   Widget build(BuildContext context) {
-    return new FlareActor("assets/splashscreen.flr",
-        alignment: Alignment.center,
-        fit: BoxFit.contain,
-        animation: "rotate");
+    return GestureDetector(
+      onTap: (){
+        navigationPage();
+//        BGM.play(0);
+      },
+      child: FlareActor("assets/splashscreen.flr",
+          alignment: Alignment.center,
+          fit: BoxFit.contain,
+          animation: "rotate",),
+    );
   }
 }
