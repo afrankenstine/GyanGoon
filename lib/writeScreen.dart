@@ -14,6 +14,8 @@ class WriteScreen extends StatefulWidget {
 bool _visible = true;
 
 class _WriteScreenState extends State<WriteScreen> {
+  List<Offset> _points = <Offset>[];
+
 
   @override
   Widget build(BuildContext context) {
@@ -130,6 +132,19 @@ class _WriteScreenState extends State<WriteScreen> {
                     padding: EdgeInsets.all(20),
                     color: Colors.white,
                   ),
+//                replacement: Container(
+//    child: GestureDetector(
+//    onPanUpdate: (DragUpdateDetails details) {
+//    setState(() {
+//    RenderBox object = context.findRenderObject();
+//    Offset _localPosition =
+//    object.globalToLocal(details.globalPosition) - Offset(0,MediaQuery.of(context).size.height * 0.25+10);
+//    _points = List.from(_points)..add(_localPosition);
+//    });
+//    },
+//    onPanEnd: (DragEndDetails details) => _points.add(null),
+//
+//    ,
               ),
             )
           ],
