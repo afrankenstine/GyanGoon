@@ -51,8 +51,8 @@ void main() async {
 //  BGM.play(0);
 
 //  AudioPlayer CustomBGM;
-////  CustomBGM = await Flame.audio.loop('assets/bgm.ogg', volume: .25);
-//  CustomBGM= await AudioCache().loop('assets/bgm.ogg', volume: .25);
+////  CustomBGM = await Flame.audio.loop('bgm.ogg', volume: .25);
+//  CustomBGM= await AudioCache().loop('bgm.ogg', volume: .25);
 }
 
 class SplashScreen extends StatefulWidget {
@@ -68,7 +68,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
     await BGM.add('bgm.ogg');
     print("Music looped");
-  BGM.play(0);
+    BGM.play(0);
+
   }
 //  CustomBGM= await AudioCache().loop('assets/bgm.ogg', volume: .25);
 
@@ -105,6 +106,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return GestureDetector(
       onTap: (){
         navigationPage();
+//        BGM.play(0);
 //        BGM.play(0);
       },
       child: FlareActor("assets/splashscreen.flr",
