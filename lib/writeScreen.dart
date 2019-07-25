@@ -128,7 +128,7 @@ class _WriteScreenState extends State<WriteScreen> {
                   replacement:Container(
                     height: MediaQuery.of(context).size.height* 0.5,
                     padding: EdgeInsets.all(20),
-                    color: Colors.white.withOpacity(0.5),
+                    color: Colors.white,
                   ),
               ),
             )
