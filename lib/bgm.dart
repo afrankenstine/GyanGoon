@@ -28,7 +28,6 @@ class BGM {
   }
 
   static Future add(String filename) async {
-    print("Added");
     AudioCache newTrack = AudioCache(prefix: 'audio/', fixedPlayer: AudioPlayer());
     await newTrack.load(filename);
     await newTrack.fixedPlayer.setReleaseMode(ReleaseMode.LOOP);
@@ -60,7 +59,6 @@ class BGM {
   static Future play(int trackIndex) async {
     if (_currentTrack == trackIndex) {
       if (_isPlaying) {
-        print("Playing");
         return;
       }
       _isPlaying = true;
@@ -75,7 +73,7 @@ class BGM {
     _currentTrack = trackIndex;
     _isPlaying = true;
     AudioCache t = _tracks[_currentTrack];
-    await t.loop(t.loadedFiles.keys.first,);
+    await t.loop(t.loadedFiles.keys.first);
     _update();
   }
 

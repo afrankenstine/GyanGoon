@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9db5aeb-634d-40cd-9df2-32d4a8b70a6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../assets/bgm.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lib/bgm.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lib/custom_transition.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lib/rotation_route.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.packages" beforeDir="false" afterPath="$PROJECT_DIR$/../.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/homeScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/homeScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/bgm.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/bgm.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/menuScreen1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/menuScreen1.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/menuScreen2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/menuScreen2.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

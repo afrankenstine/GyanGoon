@@ -61,15 +61,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  AudioPlayer CustomBGM;
+//  AudioPlayer CustomBGM;
 //  CustomBGM = await Flame.audio.loop('assets/bgm.ogg', volume: .25);
   Future loadMusic() async {
-
 //    CustomBGM = await AudioCache().loop('bgm.ogg',volume: .25);
 
     await BGM.add('bgm.ogg');
     print("Music looped");
-    BGM.play(0);
+  BGM.play(0);
   }
 //  CustomBGM= await AudioCache().loop('assets/bgm.ogg', volume: .25);
 
