@@ -29,9 +29,24 @@ import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugins.GeneratedPluginRegistrant;
 
 public class MainActivity extends FlutterActivity {
+
+    private static final int PIXEL_WIDTH = 32;
+    private DigitsDetector mnistClassifier;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     GeneratedPluginRegistrant.registerWith(this);
+
+      new MethodChannel(getFlutterView(), CHANNEL).setMethodCallHandler(
+              new MethodCallHandler() {
+                  @Override
+                  public void onMethodCall(MethodCall call, Result result) {
+                      // Note: this method is invoked on the main thread.
+                      // TODO
+                  }
+              });
+
+
   }
 }
