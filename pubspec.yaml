@@ -13,6 +13,7 @@ dependencies:
   flare_flutter: ^1.5.0
   video_player: "^0.5.1"
   flame: ^0.14.2
+  provider: ^3.0.0
 
 flutter:
   uses-material-design: true

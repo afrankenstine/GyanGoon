@@ -38,14 +38,14 @@ public class MainActivity extends FlutterActivity {
     super.onCreate(savedInstanceState);
     GeneratedPluginRegistrant.registerWith(this);
 
-      new MethodChannel(getFlutterView(), CHANNEL).setMethodCallHandler(
-              new MethodCallHandler() {
-                  @Override
-                  public void onMethodCall(MethodCall call, Result result) {
-                      // Note: this method is invoked on the main thread.
-                      // TODO
-                  }
-              });
+//      new MethodChannel(getFlutterView(), CHANNEL).setMethodCallHandler(
+//              new MethodCallHandler() {
+//                  @Override
+//                  public void onMethodCall(MethodCall call, Result result) {
+//                      // Note: this method is invoked on the main thread.
+//                      // TODO
+//                  }
+//              });
 
 
   }
