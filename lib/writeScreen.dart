@@ -16,7 +16,6 @@ bool _visible = true;
 class _WriteScreenState extends State<WriteScreen> {
   List<Offset> _points = <Offset>[];
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,14 +30,15 @@ class _WriteScreenState extends State<WriteScreen> {
           children: <Widget>[
             Container(
               decoration: BoxDecoration(
-                  image: DecorationImage(image: AssetImage("assets/logo.png"),
-                    fit: BoxFit.cover,
-                  )
-              ),
+                  image: DecorationImage(
+                image: AssetImage("assets/logo.png"),
+                fit: BoxFit.cover,
+              )),
             ),
-
             Container(
-              margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.1, bottom: MediaQuery.of(context).size.height * 0.08),
+              margin: EdgeInsets.only(
+                  top: MediaQuery.of(context).size.height * 0.1,
+                  bottom: MediaQuery.of(context).size.height * 0.08),
               child: Image.asset(
                 "assets/logo.png",
                 width: MediaQuery.of(context).size.width * 0.8,
@@ -47,52 +47,56 @@ class _WriteScreenState extends State<WriteScreen> {
               ),
             ),
             GestureDetector(
-
-              onTapDown: (TapDownDetails details ){
+              onTapDown: (TapDownDetails details) {
                 _visible = false;
                 print("Touched");
-                setState(() {
-
-                });
+                setState(() {});
 //                notifyListeners();
               },
 
+//              onTapUp: (TapUpDetails details) {
+//                _visible = true;
+//                _points.clear();
+//                print("Touch Removed");
+//                setState(() {});
+//
+//              },
 
-              onTapUp: (TapUpDetails details){
-                _visible = true;
-                print("Removed");
-                setState(() {
-
-                });
-              },
-
-              onPanStart: (details){
+              onPanStart: (details) {
                 _visible = false;
-                print("Touched");
-                setState(() {
-
-                });
+                print("Pan Touched");
+                setState(() {});
 //                notifyListeners();
               },
 
-              onPanEnd: (details){
+              onPanUpdate: (DragUpdateDetails details) {
+                _visible = false;
+                setState(() {
+                  RenderBox object = context.findRenderObject();
+                  Offset _localPosition = object
+                      .globalToLocal(details.globalPosition) -
+                      Offset(MediaQuery.of(context).size.width * 0.05,
+                          MediaQuery.of(context).size.height * 0.45);
+                  _points = List.from(_points)..add(_localPosition);
+                });
+              },
 
+              onPanEnd: (DragEndDetails details) {
                 _visible = true;
+                _points.add(null);
 
                 Future.delayed(const Duration(milliseconds: 2000), () {
-
-
-
+//                  _points.clear();
                   setState(() {
+                      if( _visible == true){
+                        _points.clear();
+                      }
+//                    _points.clear();
                     // Here you can write your code for open new view
                   });
 
-                  print("Removed");
-
+                  print("Pan Removed");
                 });
-
-
-
 
 //                setState(() {
 //
@@ -110,7 +114,7 @@ class _WriteScreenState extends State<WriteScreen> {
 
               child: Visibility(
 //                print(_visible)
-                visible:_visible,
+                visible: _visible,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -118,43 +122,41 @@ class _WriteScreenState extends State<WriteScreen> {
 //                  image: AssetImage("assets/background1.png"),
 //                  fit: BoxFit.cover,
 //                ),
-
                   ),
-                  height: MediaQuery.of(context).size.height* 0.5,
+                  height: MediaQuery.of(context).size.height * 0.5,
                   padding: EdgeInsets.all(20),
                   child: FlareActor("assets/KA.flr",
                       alignment: Alignment.center,
                       fit: BoxFit.contain,
                       animation: "Untitled"),
                 ),
-                  replacement:Container(
-                    height: MediaQuery.of(context).size.height* 0.5,
-                    padding: EdgeInsets.all(20),
-                    color: Colors.white,
+//                  replacement:Container(
+//                    height: MediaQuery.of(context).size.height* 0.5,
+//                    padding: EdgeInsets.all(20),
+//                    color: Colors.white,
+//                  ),
+                replacement: Container(
+//    margin: const EdgeInsets.all(10.0),
+                      color: Colors.white,
+                      child: Align(
+                        alignment: Alignment.bottomCenter,
+                        child: CustomPaint(
+                          painter: Signature(points: _points),
+                          size: Size(MediaQuery.of(context).size.width * 0.9,
+                              MediaQuery.of(context).size.height * 0.5),
+                        ),
+                      ),
+                    ),
                   ),
-//                replacement: Container(
-//    child: GestureDetector(
-//    onPanUpdate: (DragUpdateDetails details) {
-//    setState(() {
-//    RenderBox object = context.findRenderObject();
-//    Offset _localPosition =
-//    object.globalToLocal(details.globalPosition) - Offset(0,MediaQuery.of(context).size.height * 0.25+10);
-//    _points = List.from(_points)..add(_localPosition);
-//    });
-//    },
-//    onPanEnd: (DragEndDetails details) => _points.add(null),
-//
-//    ,
-              ),
-            )
+//                ),
+//              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-
 
 class Signature extends CustomPainter {
   List<Offset> points;
@@ -163,8 +165,8 @@ class Signature extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    Paint paint =  Paint()
-      ..color = Colors.blue
+    Paint paint = Paint()
+      ..color = Colors.black
       ..strokeCap = StrokeCap.round
       ..strokeWidth = 10.0;
 
