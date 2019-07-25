@@ -48,6 +48,11 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java/ml', 'src/main/java/neural.resources', 'src/main/java/neural.resources/ml/']
+        }
+    }
 }
 
 flutter {
@@ -55,6 +60,8 @@ flutter {
 }
 
 dependencies {
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'org.tensorflow:tensorflow-lite:+'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
