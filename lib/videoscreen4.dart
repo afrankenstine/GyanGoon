@@ -132,7 +132,7 @@ class _videoScreenState extends State<videoScreen4> {
 
           Navigator.push(
             context,
-            CustomRoute(builder: (context) => WriteScreen()),
+            CustomRoute(builder: (context) => WriteScreen4()),
           );
         },
         child: Icon(Icons.arrow_forward),
