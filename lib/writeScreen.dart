@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'videoscreen2.dart';
+
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
 import 'screenshot.dart';
@@ -159,7 +161,7 @@ class _WriteScreenState extends State<WriteScreen> {
 
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => WriteScreen()),
+            MaterialPageRoute(builder: (context) => videoScreen2()),
           );
         },
         child: Icon(Icons.arrow_forward),
