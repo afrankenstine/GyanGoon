@@ -3,6 +3,8 @@ import 'menuScreen2.dart';
 import 'rotation_route.dart';
 import 'package:flutter/cupertino.dart';
 import 'custom_transition.dart';
+import 'package:audioplayers/audio_cache.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class MenuScreen1 extends StatefulWidget {
   @override
@@ -10,6 +12,11 @@ class MenuScreen1 extends StatefulWidget {
 }
 
 class _MenuScreen1State extends State<MenuScreen1> {
+  AudioPlayer Press;
+
+  Future playMusic() async{
+    Press = await AudioCache().loop("press.mp3", volume: 0.5);
+  }
   @override
 // A relatively rigorous eyeball estimation.
   Duration get transitionDuration => const Duration(milliseconds: 1000);
@@ -60,6 +67,10 @@ class _MenuScreen1State extends State<MenuScreen1> {
                     animationDuration: Duration(milliseconds: 400),
 //                    minWidth:200,
                     onPressed: () {
+                      playMusic();
+                      Future.delayed(Duration(milliseconds: 700), (){
+                        Press.stop();
+                      });
                       Navigator.push(
                         context,
                         CustomRoute(builder: (context) => MenuScreen2()),

@@ -154,6 +154,16 @@ class _WriteScreenState extends State<WriteScreen> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => WriteScreen()),
+          );
+        },
+        child: Icon(Icons.arrow_forward),
+      ),
     );
   }
 }

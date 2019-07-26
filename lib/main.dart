@@ -42,6 +42,12 @@ void main() async {
       '/MenuScreen2' : (BuildContext context) => MenuScreen2(),
       '/videoScreen' : (BuildContext context) => videoScreen(),
       '/WriteScreen' : (BuildContext context) => WriteScreen(),
+      '/videoScreen2' : (BuildContext context) => videoScreen2(),
+      '/WriteScreen2' : (BuildContext context) => WriteScreen2(),
+      '/videoScreen3' : (BuildContext context) => videoScreen3(),
+      '/WriteScreen3' : (BuildContext context) => WriteScreen3(),
+      '/videoScreen4' : (BuildContext context) => videoScreen4(),
+      '/WriteScreen4' : (BuildContext context) => WriteScreen4(),
 
     },
 

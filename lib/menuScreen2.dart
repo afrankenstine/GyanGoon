@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'videoscreen.dart';
 import 'custom_transition.dart';
+import 'package:audioplayers/audio_cache.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 class MenuScreen2 extends StatefulWidget {
   @override
@@ -8,6 +10,11 @@ class MenuScreen2 extends StatefulWidget {
 }
 
 class _MenuScreen2State extends State<MenuScreen2> {
+  AudioPlayer Press;
+
+  Future playMusic() async{
+    Press = await AudioCache().loop("press.mp3", volume: 0.5);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,6 +64,10 @@ class _MenuScreen2State extends State<MenuScreen2> {
                           animationDuration: Duration(milliseconds: 400),
 //                    minWidth:200,
                           onPressed: () {
+                            playMusic();
+                            Future.delayed(Duration(milliseconds: 700), (){
+                              Press.stop();
+                            });
                             Navigator.push(
                               context,
                               CustomRoute(builder: (context) => videoScreen()),
