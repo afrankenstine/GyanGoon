@@ -171,7 +171,7 @@ class _WriteScreenState extends State<WriteScreen4> {
               builder: (BuildContext context) {
                 return AlertDialog(
                   title: Text(
-                    '!!Conrattulations!!',
+                    '\t!!Session!! \n\t!!Complete!!',
                     style: new TextStyle(
                       fontSize: 40.0,
                       color: Colors.blue,
