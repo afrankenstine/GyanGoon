@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9db5aeb-634d-40cd-9df2-32d4a8b70a6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/homeScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/homeScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lib/writeScreen4.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/WriteScreen3.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/writeScreen1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen3.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
