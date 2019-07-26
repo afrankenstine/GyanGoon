@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9db5aeb-634d-40cd-9df2-32d4a8b70a6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../lib/bgm.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/bgm.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/homeScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/homeScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/writeScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +116,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="602" />
     <option name="height" value="730" />
   </component>
@@ -250,8 +251,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="738" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1366" height="738" extended-state="7" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.08081571" />

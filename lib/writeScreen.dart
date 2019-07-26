@@ -85,7 +85,7 @@ class _WriteScreenState extends State<WriteScreen> {
                 _visible = true;
                 _points.add(null);
 
-                Future.delayed(const Duration(milliseconds: 2000), () {
+                Future.delayed(const Duration(milliseconds: 2500), () {
 //                  _points.clear();
                   setState(() {
                       if( _visible == true){

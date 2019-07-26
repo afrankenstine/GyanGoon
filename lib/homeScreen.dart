@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'menuScreen1.dart';
 import 'buttonanimation.dart';
 import 'custom_transition.dart';
+import 'package:audioplayers/audio_cache.dart';
+import 'package:audioplayers/audioplayers.dart';
+
+
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -9,6 +13,16 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
+  AudioPlayer Press;
+
+  Future playMusic() async{
+    Press = await AudioCache().loop("press.mp3", volume: 0.5);
+  }
+
+//  Press = AudioCache().load("Press.mp3");
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,6 +67,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       animationDuration: Duration(milliseconds: 400),
 //                    minWidth:200,
                       onPressed: () {
+                        playMusic();
+                        Future.delayed(Duration(milliseconds: 700), (){
+                          Press.stop();
+                        });
 //                      Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                         Navigator.push(
                           context,
