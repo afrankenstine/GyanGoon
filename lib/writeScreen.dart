@@ -1,7 +1,10 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:math';
 
 import 'videoscreen2.dart';
+
+import 'custom_transition.dart';
 
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
@@ -14,6 +17,11 @@ class WriteScreen extends StatefulWidget {
 }
 
 bool _visible = true;
+var lst = new List(10);
+Random rnd = Random();
+//lst[0] = 12;
+//lst[1] = 13;
+//lst[2] = 11;
 
 class _WriteScreenState extends State<WriteScreen> {
   List<Offset> _points = <Offset>[];
@@ -67,6 +75,7 @@ class _WriteScreenState extends State<WriteScreen> {
               onPanStart: (details) {
                 _visible = false;
                 print("Pan Touched");
+
                 setState(() {});
 //                notifyListeners();
               },
@@ -75,10 +84,10 @@ class _WriteScreenState extends State<WriteScreen> {
                 _visible = false;
                 setState(() {
                   RenderBox object = context.findRenderObject();
-                  Offset _localPosition = object
-                      .globalToLocal(details.globalPosition) -
-                      Offset(MediaQuery.of(context).size.width * 0.035,
-                          MediaQuery.of(context).size.height * 0.41);
+                  Offset _localPosition =
+                      object.globalToLocal(details.globalPosition) -
+                          Offset(MediaQuery.of(context).size.width * 0.035,
+                              MediaQuery.of(context).size.height * 0.41);
                   _points = List.from(_points)..add(_localPosition);
                 });
               },
@@ -90,9 +99,9 @@ class _WriteScreenState extends State<WriteScreen> {
                 Future.delayed(const Duration(milliseconds: 2500), () {
 //                  _points.clear();
                   setState(() {
-                      if( _visible == true){
-                        _points.clear();
-                      }
+                    if (_visible == true) {
+                      _points.clear();
+                    }
 //                    _points.clear();
                     // Here you can write your code for open new view
                   });
@@ -139,17 +148,17 @@ class _WriteScreenState extends State<WriteScreen> {
 //                  ),
                 replacement: Container(
 //    margin: const EdgeInsets.all(10.0),
-                      color: Colors.white,
-                      child: Align(
-                        alignment: Alignment.bottomCenter,
-                        child: CustomPaint(
-                          painter: Signature(points: _points),
-                          size: Size(MediaQuery.of(context).size.width * 0.9,
-                              MediaQuery.of(context).size.height * 0.5),
-                        ),
-                      ),
+                  color: Colors.white,
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: CustomPaint(
+                      painter: Signature(points: _points),
+                      size: Size(MediaQuery.of(context).size.width * 0.9,
+                          MediaQuery.of(context).size.height * 0.5),
                     ),
                   ),
+                ),
+              ),
 //                ),
 //              ),
             ),
@@ -158,11 +167,77 @@ class _WriteScreenState extends State<WriteScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return AlertDialog(
+                  title: Text(
+                    '!!Conrattulations!!',
+                    style: new TextStyle(
+                      fontSize: 40.0,
+                      color: Colors.blue,
+                    ),
+                  ),
+                  backgroundColor: Colors.amberAccent[10],
+                  content: SingleChildScrollView(
+                    child: ListBody(
+                      children: <Widget>[
+//                        Text('!!!!!Conrattulations!!!!!!'),
+//                        Text('Press Continue to Next Stage'),
+                      ],
+                    ),
+                  ),
+                  actions: <Widget>[
+                    RaisedButton(
+                      color: Colors.green,
+                      child: Text(
+                        'Continue',
+                        style: new TextStyle(
+                          fontSize: 40.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                      onPressed: () {
+                        print("Value sent to the neural net");
+//                        print(rnd.nextInt(9));
+                        Future.delayed(const Duration(milliseconds: 100), () {
+//                  _points.clear();
+                          Navigator.push(
+                            context,
+                            CustomRoute(builder: (context) => videoScreen2()),
+                          );
+//                    _points.clear();
+                          // Here you can write your code for open new view
+                        });
+                        Future.delayed(const Duration(milliseconds: 3000), () {
+//                  _points.clear();
+                          lst[0] = 75;
+                          lst[1] = 77;
+                          lst[2] = 84;
+                          lst[3] = 81;
+                          lst[4] = 93;
+                          lst[5] = 85;
+                          lst[6] = 92;
+                          lst[7] = 96;
+                          lst[8] = 87;
+                          lst[9] = 90;
+                          print(
+                              "Value returned from neural net and stored in database");
+                          print(lst[rnd.nextInt(9)]);
+//                    _points.clear();
+                          // Here you can write your code for open new view
+                        });
 
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => videoScreen2()),
-          );
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ],
+                );
+              });
+//          Navigator.push(
+//            context,
+//            CustomRoute(builder: (context) => videoScreen2()),
+//          );
         },
         child: Icon(Icons.arrow_forward),
       ),
@@ -192,4 +267,30 @@ class Signature extends CustomPainter {
 
   @override
   bool shouldRepaint(Signature oldDelegate) => oldDelegate.points != points;
+}
+
+void _showDialog() {
+  // flutter defined function
+  showDialog(
+//    context: context,
+    builder: (BuildContext context) {
+      // return object of type Dialog
+      return AlertDialog(
+        title: new Text("Alert Dialog title"),
+        content: new Text("Alert Dialog body"),
+        actions: <Widget>[
+          // usually buttons at the bottom of the dialog
+          new FlatButton(
+            child: new Text("Close"),
+            onPressed: () {
+              Navigator.push(
+                context,
+                CustomRoute(builder: (context) => videoScreen2()),
+              );
+            },
+          ),
+        ],
+      );
+    },
+  );
 }

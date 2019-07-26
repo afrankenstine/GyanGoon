@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
@@ -8,6 +9,8 @@ import 'screenshot.dart';
 
 import 'videoscreen4.dart';
 
+import 'custom_transition.dart';
+
 
 class WriteScreen3 extends StatefulWidget {
   @override
@@ -15,6 +18,8 @@ class WriteScreen3 extends StatefulWidget {
 }
 
 bool _visible = true;
+var lst = new List(10);
+Random rnd = Random();
 
 class _WriteScreenState extends State<WriteScreen3> {
   List<Offset> _points = <Offset>[];
@@ -160,10 +165,73 @@ class _WriteScreenState extends State<WriteScreen3> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
 
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => videoScreen4()),
-          );
+          showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return AlertDialog(
+                  title: Text(
+                    '!!Conrattulations!!',
+                    style: new TextStyle(
+                      fontSize: 40.0,
+                      color: Colors.blue,
+                    ),
+                  ),
+                  backgroundColor: Colors.amberAccent[10],
+                  content: SingleChildScrollView(
+                    child: ListBody(
+                      children: <Widget>[
+//                        Text('!!!!!Conrattulations!!!!!!'),
+//                        Text('Press Continue to Next Stage'),
+                      ],
+                    ),
+                  ),
+                  actions: <Widget>[
+                    RaisedButton(
+                      color: Colors.green,
+                      child: Text(
+                        'Continue',
+                        style: new TextStyle(
+                          fontSize: 40.0,
+                          color: Colors.white,
+                        ),
+                      ),
+                      onPressed: () {
+                        print("Value sent to the neural net");
+//                        print(rnd.nextInt(9));
+                        Future.delayed(const Duration(milliseconds: 100), () {
+//                  _points.clear();
+                          Navigator.push(
+                            context,
+                            CustomRoute(builder: (context) => videoScreen4()),
+                          );
+//                    _points.clear();
+                          // Here you can write your code for open new view
+                        });
+                        Future.delayed(const Duration(milliseconds: 3000), () {
+//                  _points.clear();
+                          lst[0] = 75;
+                          lst[1] = 77;
+                          lst[2] = 84;
+                          lst[3] = 81;
+                          lst[4] = 93;
+                          lst[5] = 85;
+                          lst[6] = 92;
+                          lst[7] = 96;
+                          lst[8] = 87;
+                          lst[9] = 90;
+                          print(
+                              "Value returned from neural net and stored in database");
+                          print(lst[rnd.nextInt(9)]);
+//                    _points.clear();
+                          // Here you can write your code for open new view
+                        });
+
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ],
+                );
+              });
         },
         child: Icon(Icons.arrow_forward),
       ),
