@@ -9,11 +9,13 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
 import 'screenshot.dart';
+
+
 //import 'package:image_gallery_saver/image_gallery_saver.dart';
 
 //import '';
 
-class WriteScreen4 extends StatefulWidget {
+class WriteScreen14 extends StatefulWidget {
   @override
   _WriteScreenState createState() => _WriteScreenState();
 }
@@ -23,7 +25,7 @@ var lst = new List(10);
 Random rnd = Random();
 
 
-class _WriteScreenState extends State<WriteScreen4> {
+class _WriteScreenState extends State<WriteScreen14> {
   List<Offset> _points = <Offset>[];
 
   @override

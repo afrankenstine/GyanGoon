@@ -2,26 +2,30 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:math';
 
+import 'videoscreen12.dart';
+
+import 'custom_transition.dart';
+import 'videoscreen11.dart';
+
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
 import 'screenshot.dart';
 //import 'package:image_gallery_saver/image_gallery_saver.dart';
 
-import 'videoscreen4.dart';
-
-import 'custom_transition.dart';
-
-
-class WriteScreen3 extends StatefulWidget {
+class WriteScreen11 extends StatefulWidget {
   @override
-  _WriteScreenState createState() => _WriteScreenState();
+  _WriteScreen11State createState() => _WriteScreen11State();
 }
 
 bool _visible = true;
 var lst = new List(10);
 Random rnd = Random();
+ScreenshotController screenshotController = ScreenshotController();
+//lst[0] = 12;
+//lst[1] = 13;
+//lst[2] = 11;
 
-class _WriteScreenState extends State<WriteScreen3> {
+class _WriteScreen11State extends State<WriteScreen11> {
   List<Offset> _points = <Offset>[];
 
   @override
@@ -39,9 +43,9 @@ class _WriteScreenState extends State<WriteScreen3> {
             Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/logo.png"),
-                    fit: BoxFit.cover,
-                  )),
+                image: AssetImage("assets/logo.png"),
+                fit: BoxFit.cover,
+              )),
             ),
             Container(
               margin: EdgeInsets.only(
@@ -54,13 +58,15 @@ class _WriteScreenState extends State<WriteScreen3> {
                 fit: BoxFit.cover,
               ),
             ),
-            GestureDetector(
-              onTapDown: (TapDownDetails details) {
-                _visible = false;
-                print("Touched");
-                setState(() {});
+            Screenshot(
+              controller: screenshotController,
+              child: GestureDetector(
+                onTapDown: (TapDownDetails details) {
+                  _visible = false;
+                  print("Touched");
+                  setState(() {});
 //                notifyListeners();
-              },
+                },
 
 //              onTapUp: (TapUpDetails details) {
 //                _visible = true;
@@ -70,47 +76,48 @@ class _WriteScreenState extends State<WriteScreen3> {
 //
 //              },
 
-              onPanStart: (details) {
-                _visible = false;
-                print("Pan Touched");
-                setState(() {});
+                onPanStart: (details) {
+                  _visible = false;
+                  print("Pan Touched");
+
+                  setState(() {});
 //                notifyListeners();
-              },
+                },
 
-              onPanUpdate: (DragUpdateDetails details) {
-                _visible = false;
-                setState(() {
-                  RenderBox object = context.findRenderObject();
-                  Offset _localPosition = object
-                      .globalToLocal(details.globalPosition) -
-                      Offset(MediaQuery.of(context).size.width * 0.035,
-                          MediaQuery.of(context).size.height * 0.41);
-                  _points = List.from(_points)..add(_localPosition);
-                });
-              },
-
-              onPanEnd: (DragEndDetails details) {
-                _visible = true;
-                _points.add(null);
-
-                Future.delayed(const Duration(milliseconds: 2500), () {
-//                  _points.clear();
+                onPanUpdate: (DragUpdateDetails details) {
+                  _visible = false;
                   setState(() {
-                    if( _visible == true){
-                      _points.clear();
-                    }
-//                    _points.clear();
-                    // Here you can write your code for open new view
+                    RenderBox object = context.findRenderObject();
+                    Offset _localPosition =
+                        object.globalToLocal(details.globalPosition) -
+                            Offset(MediaQuery.of(context).size.width * 0.035,
+                                MediaQuery.of(context).size.height * 0.41);
+                    _points = List.from(_points)..add(_localPosition);
                   });
+                },
 
-                  print("Pan Removed");
-                });
+                onPanEnd: (DragEndDetails details) {
+                  _visible = true;
+                  _points.add(null);
+
+                  Future.delayed(const Duration(milliseconds: 2500), () {
+//                  _points.clear();
+                    setState(() {
+                      if (_visible == true) {
+                        _points.clear();
+                      }
+//                    _points.clear();
+                      // Here you can write your code for open new view
+                    });
+
+                    print("Pan Removed");
+                  });
 
 //                setState(() {
 //
 //                });
 //                notifyListeners();
-              },
+                },
 
 //              onTap: (){
 //                _visible = false;
@@ -120,51 +127,51 @@ class _WriteScreenState extends State<WriteScreen3> {
 //                });
 //              },
 
-              child: Visibility(
+                child: Visibility(
 //                print(_visible)
-                visible: _visible,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
+                  visible: _visible,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
 //                image: DecorationImage(
 //                  image: AssetImage("assets/background1.png"),
 //                  fit: BoxFit.cover,
 //                ),
+                    ),
+                    height: MediaQuery.of(context).size.height * 0.5,
+                    padding: EdgeInsets.all(20),
+                    child: FlareActor("assets/KA.flr",
+                        alignment: Alignment.center,
+                        fit: BoxFit.contain,
+                        animation: "Untitled"),
                   ),
-                  height: MediaQuery.of(context).size.height * 0.5,
-                  padding: EdgeInsets.all(20),
-                  child: FlareActor("assets/ga.flr",
-                      alignment: Alignment.center,
-                      fit: BoxFit.contain,
-                      animation: "Untitled"),
-                ),
 //                  replacement:Container(
 //                    height: MediaQuery.of(context).size.height* 0.5,
 //                    padding: EdgeInsets.all(20),
 //                    color: Colors.white,
 //                  ),
-                replacement: Container(
+                  replacement: Container(
 //    margin: const EdgeInsets.all(10.0),
-                  color: Colors.white,
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: CustomPaint(
-                      painter: Signature(points: _points),
-                      size: Size(MediaQuery.of(context).size.width * 0.9,
-                          MediaQuery.of(context).size.height * 0.5),
+                    color: Colors.white,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: CustomPaint(
+                        painter: Signature(points: _points),
+                        size: Size(MediaQuery.of(context).size.width * 0.9,
+                            MediaQuery.of(context).size.height * 0.5),
+                      ),
                     ),
                   ),
                 ),
-              ),
 //                ),
 //              ),
+              ),
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-
           showDialog(
               context: context,
               builder: (BuildContext context) {
@@ -202,8 +209,14 @@ class _WriteScreenState extends State<WriteScreen3> {
 //                  _points.clear();
                           Navigator.push(
                             context,
-                            CustomRoute(builder: (context) => videoScreen4()),
+                            CustomRoute(builder: (context) => videoScreen12()),
                           );
+//                          Navigator.pop(context);
+//                          Navigator.pop(context);
+//                          Navigator.push(
+//                            context,
+//                            CustomRoute(builder: (context) => videoScreen()),
+//                          );
 //                    _points.clear();
                           // Here you can write your code for open new view
                         });
@@ -232,6 +245,10 @@ class _WriteScreenState extends State<WriteScreen3> {
                   ],
                 );
               });
+//          Navigator.push(
+//            context,
+//            CustomRoute(builder: (context) => videoScreen2()),
+//          );
         },
         child: Icon(Icons.arrow_forward),
       ),
@@ -261,4 +278,30 @@ class Signature extends CustomPainter {
 
   @override
   bool shouldRepaint(Signature oldDelegate) => oldDelegate.points != points;
+}
+
+void _showDialog() {
+  // flutter defined function
+  showDialog(
+//    context: context,
+    builder: (BuildContext context) {
+      // return object of type Dialog
+      return AlertDialog(
+        title: new Text("Alert Dialog title"),
+        content: new Text("Alert Dialog body"),
+        actions: <Widget>[
+          // usually buttons at the bottom of the dialog
+          new FlatButton(
+            child: new Text("Close"),
+            onPressed: () {
+              Navigator.push(
+                context,
+                CustomRoute(builder: (context) => videoScreen12()),
+              );
+            },
+          ),
+        ],
+      );
+    },
+  );
 }

@@ -5,14 +5,14 @@ import 'package:gyangoon/homeScreen.dart';
 import "package:flare_flutter/flare_actor.dart";
 import 'menuScreen1.dart';
 import 'menuScreen2.dart';
-import 'videoscreen1.dart';
-import 'writeScreen.dart';
+import 'videoscreen11.dart';
+import 'writeScreen11.dart';
 import 'videoscreen12.dart';
-import 'writeScreen2.dart';
-import 'videoscreen3.dart';
-import 'writeScreen3.dart';
-import 'videoscreen4.dart';
-import 'writeScreen4.dart';
+import 'writeScreen12.dart';
+import 'videoscreen13.dart';
+import 'writeScreen13.dart';
+import 'videoscreen14.dart';
+import 'writeScreen14.dart';
 import 'custom_transition.dart';
 import 'bgm.dart';
 import 'package:flame/flame.dart';
@@ -46,14 +46,14 @@ void main() async {
       '/HomeScreen': (BuildContext context) => new HomeScreen(),
       '/MenuScreen1' : (BuildContext context) => MenuScreen1(),
       '/MenuScreen2' : (BuildContext context) => MenuScreen2(),
-      '/videoScreen1' : (BuildContext context) => videoScreen11(),
-      '/WriteScreen' : (BuildContext context) => WriteScreen(),
-      '/videoScreen2' : (BuildContext context) => videoScreen2(),
-      '/WriteScreen2' : (BuildContext context) => WriteScreen2(),
-      '/videoScreen3' : (BuildContext context) => videoScreen3(),
-      '/WriteScreen3' : (BuildContext context) => WriteScreen3(),
-      '/videoScreen4' : (BuildContext context) => videoScreen4(),
-      '/WriteScreen4' : (BuildContext context) => WriteScreen4(),
+      '/videoScreen11' : (BuildContext context) => videoScreen11(),
+      '/WriteScreen' : (BuildContext context) => WriteScreen11(),
+      '/videoScreen2' : (BuildContext context) => videoScreen12(),
+      '/WriteScreen2' : (BuildContext context) => WriteScreen12(),
+      '/videoScreen3' : (BuildContext context) => videoScreen13(),
+      '/WriteScreen3' : (BuildContext context) => WriteScreen13(),
+      '/videoScreen4' : (BuildContext context) => videoScreen14(),
+      '/WriteScreen4' : (BuildContext context) => WriteScreen14(),
 
     },
 

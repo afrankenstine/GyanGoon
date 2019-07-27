@@ -6,16 +6,16 @@ import 'package:video_player/video_player.dart';
 //import "package:flare_flutter/flare_actor.dart";
 //import 'menuScreen1.dart';
 //import 'menuScreen2.dart';
-import 'writeScreen.dart';
+import 'writeScreen11.dart';
 import 'custom_transition.dart';
-import 'writeScreen4.dart';
+import 'writeScreen14.dart';
 
-class videoScreen4 extends StatefulWidget {
+class videoScreen14 extends StatefulWidget {
   @override
   _videoScreenState createState() => _videoScreenState();
 }
 
-class _videoScreenState extends State<videoScreen4> {
+class _videoScreenState extends State<videoScreen14> {
   VideoPlayerController playerController;
   VoidCallback listener;
 
@@ -132,7 +132,7 @@ class _videoScreenState extends State<videoScreen4> {
 
           Navigator.push(
             context,
-            CustomRoute(builder: (context) => WriteScreen4()),
+            CustomRoute(builder: (context) => WriteScreen14()),
           );
         },
         child: Icon(Icons.arrow_forward),

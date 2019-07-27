@@ -9,9 +9,9 @@ import 'screenshot.dart';
 
 import 'custom_transition.dart';
 
-import 'videoscreen3.dart';
+import 'videoscreen13.dart';
 
-class WriteScreen2 extends StatefulWidget {
+class WriteScreen12 extends StatefulWidget {
   @override
   _WriteScreenState createState() => _WriteScreenState();
 }
@@ -20,7 +20,7 @@ bool _visible = true;
 var lst = new List(10);
 Random rnd = Random();
 
-class _WriteScreenState extends State<WriteScreen2> {
+class _WriteScreenState extends State<WriteScreen12> {
   List<Offset> _points = <Offset>[];
 
   @override
@@ -201,7 +201,7 @@ class _WriteScreenState extends State<WriteScreen2> {
 //                  _points.clear();
                           Navigator.push(
                             context,
-                            CustomRoute(builder: (context) => videoScreen3()),
+                            CustomRoute(builder: (context) => videoScreen13()),
                           );
 //                    _points.clear();
                           // Here you can write your code for open new view
