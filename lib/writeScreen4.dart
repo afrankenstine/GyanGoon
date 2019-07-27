@@ -201,10 +201,17 @@ class _WriteScreenState extends State<WriteScreen4> {
 //                        print(rnd.nextInt(9));
                         Future.delayed(const Duration(milliseconds: 100), () {
 //                  _points.clear();
-                          Navigator.push(
-                            context,
-                            CustomRoute(builder: (context) => MenuScreen2()),
-                          );
+//
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+
+
 //                    _points.clear();
                           // Here you can write your code for open new view
                         });
