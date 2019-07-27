@@ -5,9 +5,9 @@ import 'package:gyangoon/homeScreen.dart';
 import "package:flare_flutter/flare_actor.dart";
 import 'menuScreen1.dart';
 import 'menuScreen2.dart';
-import 'videoscreen.dart';
+import 'videoscreen1.dart';
 import 'writeScreen.dart';
-import 'videoscreen2.dart';
+import 'videoscreen12.dart';
 import 'writeScreen2.dart';
 import 'videoscreen3.dart';
 import 'writeScreen3.dart';
@@ -46,7 +46,7 @@ void main() async {
       '/HomeScreen': (BuildContext context) => new HomeScreen(),
       '/MenuScreen1' : (BuildContext context) => MenuScreen1(),
       '/MenuScreen2' : (BuildContext context) => MenuScreen2(),
-      '/videoScreen' : (BuildContext context) => videoScreen(),
+      '/videoScreen1' : (BuildContext context) => videoScreen11(),
       '/WriteScreen' : (BuildContext context) => WriteScreen(),
       '/videoScreen2' : (BuildContext context) => videoScreen2(),
       '/WriteScreen2' : (BuildContext context) => WriteScreen2(),

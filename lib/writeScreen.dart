@@ -2,10 +2,10 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:math';
 
-import 'videoscreen2.dart';
+import 'videoscreen12.dart';
 
 import 'custom_transition.dart';
-import 'videoscreen.dart';
+import 'videoscreen1.dart';
 
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";

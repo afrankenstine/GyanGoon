@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'videoscreen.dart';
+import 'videoscreen1.dart';
 import 'custom_transition.dart';
 import 'package:audioplayers/audio_cache.dart';
 import 'package:audioplayers/audioplayers.dart';
@@ -70,7 +70,7 @@ class _MenuScreen2State extends State<MenuScreen2> {
                             });
                             Navigator.push(
                               context,
-                              CustomRoute(builder: (context) => videoScreen()),
+                              CustomRoute(builder: (context) => videoScreen11()),
                             );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },

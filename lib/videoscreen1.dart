@@ -9,13 +9,12 @@ import 'package:video_player/video_player.dart';
 import 'writeScreen.dart';
 import 'custom_transition.dart';
 
-
-class videoScreen extends StatefulWidget {
+class videoScreen11 extends StatefulWidget {
   @override
-  _videoScreenState createState() => _videoScreenState();
+  _videoScreen11State createState() => _videoScreen11State();
 }
 
-class _videoScreenState extends State<videoScreen> {
+class _videoScreen11State extends State<videoScreen11> {
   VideoPlayerController playerController;
   VoidCallback listener;
 
@@ -67,7 +66,9 @@ class _videoScreenState extends State<videoScreen> {
           child: Column(
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.1, bottom: MediaQuery.of(context).size.height * 0.05),
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.1,
+                    bottom: MediaQuery.of(context).size.height * 0.05),
                 child: Image.asset(
                   "assets/logo.png",
                   width: MediaQuery.of(context).size.width * 0.8,
@@ -76,15 +77,14 @@ class _videoScreenState extends State<videoScreen> {
                 ),
               ),
               AspectRatio(
-
                 aspectRatio: 16 / 9,
                 child: Container(
 //                  margin: EdgeInsets.only(
 //                      top: MediaQuery.of(context).size.height * 0.1),
                   child: (playerController != null
                       ? VideoPlayer(
-                    playerController,
-                  )
+                          playerController,
+                        )
                       : Container()),
                 ),
               ),
@@ -95,7 +95,7 @@ class _videoScreenState extends State<videoScreen> {
                   borderRadius: BorderRadius.circular(40),
                   child: ButtonTheme(
                     minWidth: 20.0,
-                    height:20.0,
+                    height: 20.0,
                     child: RaisedButton(
                       highlightElevation: 20.0,
                       highlightColor: Colors.blue[900],
@@ -118,7 +118,10 @@ class _videoScreenState extends State<videoScreen> {
 //
                         padding: const EdgeInsets.only(
                             left: 20.0, right: 20.0, top: 5, bottom: 5),
-                        child: Icon(Icons.play_circle_filled , size: 50.0,),
+                        child: Icon(
+                          Icons.play_circle_filled,
+                          size: 50.0,
+                        ),
 //                  shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                       ),
                     ),
@@ -129,7 +132,6 @@ class _videoScreenState extends State<videoScreen> {
           )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-
           Navigator.push(
             context,
             CustomRoute(builder: (context) => WriteScreen()),
