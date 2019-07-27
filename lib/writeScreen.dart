@@ -19,6 +19,7 @@ class WriteScreen extends StatefulWidget {
 bool _visible = true;
 var lst = new List(10);
 Random rnd = Random();
+ScreenshotController screenshotController = ScreenshotController();
 //lst[0] = 12;
 //lst[1] = 13;
 //lst[2] = 11;
@@ -56,13 +57,15 @@ class _WriteScreenState extends State<WriteScreen> {
                 fit: BoxFit.cover,
               ),
             ),
-            GestureDetector(
-              onTapDown: (TapDownDetails details) {
-                _visible = false;
-                print("Touched");
-                setState(() {});
+            Screenshot(
+              controller: screenshotController,
+              child: GestureDetector(
+                onTapDown: (TapDownDetails details) {
+                  _visible = false;
+                  print("Touched");
+                  setState(() {});
 //                notifyListeners();
-              },
+                },
 
 //              onTapUp: (TapUpDetails details) {
 //                _visible = true;
@@ -72,48 +75,48 @@ class _WriteScreenState extends State<WriteScreen> {
 //
 //              },
 
-              onPanStart: (details) {
-                _visible = false;
-                print("Pan Touched");
+                onPanStart: (details) {
+                  _visible = false;
+                  print("Pan Touched");
 
-                setState(() {});
+                  setState(() {});
 //                notifyListeners();
-              },
+                },
 
-              onPanUpdate: (DragUpdateDetails details) {
-                _visible = false;
-                setState(() {
-                  RenderBox object = context.findRenderObject();
-                  Offset _localPosition =
-                      object.globalToLocal(details.globalPosition) -
-                          Offset(MediaQuery.of(context).size.width * 0.035,
-                              MediaQuery.of(context).size.height * 0.41);
-                  _points = List.from(_points)..add(_localPosition);
-                });
-              },
-
-              onPanEnd: (DragEndDetails details) {
-                _visible = true;
-                _points.add(null);
-
-                Future.delayed(const Duration(milliseconds: 2500), () {
-//                  _points.clear();
+                onPanUpdate: (DragUpdateDetails details) {
+                  _visible = false;
                   setState(() {
-                    if (_visible == true) {
-                      _points.clear();
-                    }
-//                    _points.clear();
-                    // Here you can write your code for open new view
+                    RenderBox object = context.findRenderObject();
+                    Offset _localPosition =
+                        object.globalToLocal(details.globalPosition) -
+                            Offset(MediaQuery.of(context).size.width * 0.035,
+                                MediaQuery.of(context).size.height * 0.41);
+                    _points = List.from(_points)..add(_localPosition);
                   });
+                },
 
-                  print("Pan Removed");
-                });
+                onPanEnd: (DragEndDetails details) {
+                  _visible = true;
+                  _points.add(null);
+
+                  Future.delayed(const Duration(milliseconds: 2500), () {
+//                  _points.clear();
+                    setState(() {
+                      if (_visible == true) {
+                        _points.clear();
+                      }
+//                    _points.clear();
+                      // Here you can write your code for open new view
+                    });
+
+                    print("Pan Removed");
+                  });
 
 //                setState(() {
 //
 //                });
 //                notifyListeners();
-              },
+                },
 
 //              onTap: (){
 //                _visible = false;
@@ -123,44 +126,45 @@ class _WriteScreenState extends State<WriteScreen> {
 //                });
 //              },
 
-              child: Visibility(
+                child: Visibility(
 //                print(_visible)
-                visible: _visible,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
+                  visible: _visible,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
 //                image: DecorationImage(
 //                  image: AssetImage("assets/background1.png"),
 //                  fit: BoxFit.cover,
 //                ),
+                    ),
+                    height: MediaQuery.of(context).size.height * 0.5,
+                    padding: EdgeInsets.all(20),
+                    child: FlareActor("assets/KA.flr",
+                        alignment: Alignment.center,
+                        fit: BoxFit.contain,
+                        animation: "Untitled"),
                   ),
-                  height: MediaQuery.of(context).size.height * 0.5,
-                  padding: EdgeInsets.all(20),
-                  child: FlareActor("assets/KA.flr",
-                      alignment: Alignment.center,
-                      fit: BoxFit.contain,
-                      animation: "Untitled"),
-                ),
 //                  replacement:Container(
 //                    height: MediaQuery.of(context).size.height* 0.5,
 //                    padding: EdgeInsets.all(20),
 //                    color: Colors.white,
 //                  ),
-                replacement: Container(
+                  replacement: Container(
 //    margin: const EdgeInsets.all(10.0),
-                  color: Colors.white,
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: CustomPaint(
-                      painter: Signature(points: _points),
-                      size: Size(MediaQuery.of(context).size.width * 0.9,
-                          MediaQuery.of(context).size.height * 0.5),
+                    color: Colors.white,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: CustomPaint(
+                        painter: Signature(points: _points),
+                        size: Size(MediaQuery.of(context).size.width * 0.9,
+                            MediaQuery.of(context).size.height * 0.5),
+                      ),
                     ),
                   ),
                 ),
-              ),
 //                ),
 //              ),
+              ),
             ),
           ],
         ),
