@@ -2,64 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9db5aeb-634d-40cd-9df2-32d4a8b70a6c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen15.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen15.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen25.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen25.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen31.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen31.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen32.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen32.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen33.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen33.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen34.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen34.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen35.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen35.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen41.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen41.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen42.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen42.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen43.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen43.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen44.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen44.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen45.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen45.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen51.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen51.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen52.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen52.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen53.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen53.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen54.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen54.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen55.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen55.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen61.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen61.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen62.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen62.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen63.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen63.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen64.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen64.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen65.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen65.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen71.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen71.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen72.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen72.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen73.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen73.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen74.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen74.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen75.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen75.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/videoscreen76.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen76.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen15.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen15.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen25.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen25.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen31.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen31.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen32.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen32.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen33.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen33.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen34.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen34.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen35.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen35.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen41.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen41.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen42.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen42.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen43.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen43.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen44.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen44.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen45.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen45.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen51.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen51.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen52.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen52.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen53.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen53.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen54.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen54.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen55.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen55.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen61.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen61.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen62.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen62.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen63.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen63.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen64.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen64.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen65.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen65.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen71.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen71.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen72.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen72.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen73.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen73.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen74.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen74.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen75.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen75.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/writeScreen76.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen76.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/menuScreen2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/menuScreen2.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
