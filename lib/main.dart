@@ -13,6 +13,14 @@ import 'videoscreen13.dart';
 import 'writeScreen13.dart';
 import 'videoscreen14.dart';
 import 'writeScreen14.dart';
+import 'videoscreen21.dart';
+import 'writeScreen21.dart';
+import 'videoscreen22.dart';
+import 'writeScreen22.dart';
+import 'videoscreen23.dart';
+import 'writeScreen23.dart';
+import 'videoscreen24.dart';
+import 'writeScreen24.dart';
 import 'custom_transition.dart';
 import 'bgm.dart';
 import 'package:flame/flame.dart';
@@ -47,13 +55,21 @@ void main() async {
       '/MenuScreen1' : (BuildContext context) => MenuScreen1(),
       '/MenuScreen2' : (BuildContext context) => MenuScreen2(),
       '/videoScreen11' : (BuildContext context) => videoScreen11(),
-      '/WriteScreen' : (BuildContext context) => WriteScreen11(),
-      '/videoScreen2' : (BuildContext context) => videoScreen12(),
-      '/WriteScreen2' : (BuildContext context) => WriteScreen12(),
-      '/videoScreen3' : (BuildContext context) => videoScreen13(),
-      '/WriteScreen3' : (BuildContext context) => WriteScreen13(),
-      '/videoScreen4' : (BuildContext context) => videoScreen14(),
-      '/WriteScreen4' : (BuildContext context) => WriteScreen14(),
+      '/WriteScreen11' : (BuildContext context) => WriteScreen11(),
+      '/videoScreen12' : (BuildContext context) => videoScreen12(),
+      '/WriteScreen12' : (BuildContext context) => WriteScreen12(),
+      '/videoScreen13' : (BuildContext context) => videoScreen13(),
+      '/WriteScreen13' : (BuildContext context) => WriteScreen13(),
+      '/videoScreen14' : (BuildContext context) => videoScreen14(),
+      '/WriteScreen14' : (BuildContext context) => WriteScreen14(),
+      '/videoScreen11' : (BuildContext context) => videoScreen21(),
+      '/WriteScreen11' : (BuildContext context) => WriteScreen21(),
+      '/videoScreen12' : (BuildContext context) => videoScreen22(),
+      '/WriteScreen12' : (BuildContext context) => WriteScreen22(),
+      '/videoScreen13' : (BuildContext context) => videoScreen23(),
+      '/WriteScreen13' : (BuildContext context) => WriteScreen23(),
+      '/videoScreen14' : (BuildContext context) => videoScreen24(),
+      '/WriteScreen14' : (BuildContext context) => WriteScreen24(),
 
     },
 

@@ -8,13 +8,14 @@ import 'package:video_player/video_player.dart';
 //import 'menuScreen2.dart';
 import 'writeScreen11.dart';
 import 'custom_transition.dart';
+import 'writeScreen14.dart';
 
-class videoScreen11 extends StatefulWidget {
+class videoScreen24 extends StatefulWidget {
   @override
   _videoScreenState createState() => _videoScreenState();
 }
 
-class _videoScreenState extends State<videoScreen11> {
+class _videoScreenState extends State<videoScreen24> {
   VideoPlayerController playerController;
   VoidCallback listener;
 
@@ -28,7 +29,7 @@ class _videoScreenState extends State<videoScreen11> {
 
   void createVideo() {
     if (playerController == null) {
-      playerController = VideoPlayerController.asset("assets/ka_trim.mp4")
+      playerController = VideoPlayerController.asset("assets/gha.mp4")
         ..addListener(listener)
         ..setVolume(1.0)
         ..initialize()
@@ -66,9 +67,7 @@ class _videoScreenState extends State<videoScreen11> {
           child: Column(
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height * 0.1,
-                    bottom: MediaQuery.of(context).size.height * 0.05),
+                margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.1, bottom: MediaQuery.of(context).size.height * 0.05),
                 child: Image.asset(
                   "assets/logo.png",
                   width: MediaQuery.of(context).size.width * 0.8,
@@ -77,14 +76,15 @@ class _videoScreenState extends State<videoScreen11> {
                 ),
               ),
               AspectRatio(
+
                 aspectRatio: 16 / 9,
                 child: Container(
 //                  margin: EdgeInsets.only(
 //                      top: MediaQuery.of(context).size.height * 0.1),
                   child: (playerController != null
                       ? VideoPlayer(
-                          playerController,
-                        )
+                    playerController,
+                  )
                       : Container()),
                 ),
               ),
@@ -95,7 +95,7 @@ class _videoScreenState extends State<videoScreen11> {
                   borderRadius: BorderRadius.circular(40),
                   child: ButtonTheme(
                     minWidth: 20.0,
-                    height: 20.0,
+                    height:20.0,
                     child: RaisedButton(
                       highlightElevation: 20.0,
                       highlightColor: Colors.blue[900],
@@ -118,10 +118,7 @@ class _videoScreenState extends State<videoScreen11> {
 //
                         padding: const EdgeInsets.only(
                             left: 20.0, right: 20.0, top: 5, bottom: 5),
-                        child: Icon(
-                          Icons.play_circle_filled,
-                          size: 50.0,
-                        ),
+                        child: Icon(Icons.play_circle_filled , size: 50.0,),
 //                  shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                       ),
                     ),
@@ -132,9 +129,10 @@ class _videoScreenState extends State<videoScreen11> {
           )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+
           Navigator.push(
             context,
-            CustomRoute(builder: (context) => WriteScreen11()),
+            CustomRoute(builder: (context) => WriteScreen14()),
           );
         },
         child: Icon(Icons.arrow_forward),
