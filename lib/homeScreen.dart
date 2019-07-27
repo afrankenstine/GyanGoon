@@ -5,23 +5,19 @@ import 'custom_transition.dart';
 import 'package:audioplayers/audio_cache.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-
-
 class HomeScreen extends StatefulWidget {
   @override
-  _HomeScreenState createState() =>  _HomeScreenState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   AudioPlayer Press;
 
-  Future playMusic() async{
+  Future playMusic() async {
     Press = await AudioCache().loop("press.mp3", volume: 0.5);
   }
 
 //  Press = AudioCache().load("Press.mp3");
-
 
   @override
   Widget build(BuildContext context) {
@@ -35,17 +31,17 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           child: Column(
             children: <Widget>[
-
               Container(
                 decoration: BoxDecoration(
-                    image: DecorationImage(image: AssetImage("assets/logo.png"),
-                      fit: BoxFit.cover,
-                    )
-                ),
+                    image: DecorationImage(
+                  image: AssetImage("assets/logo.png"),
+                  fit: BoxFit.cover,
+                )),
               ),
 
               Container(
-                margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.1),
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.1),
                 child: Image.asset(
                   "assets/logo.png",
                   width: MediaQuery.of(context).size.width * 0.8,
@@ -54,9 +50,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
 
-
               Container(
-                margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.1),
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.1),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(40),
                   child: ButtonTheme(
@@ -68,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
 //                    minWidth:200,
                       onPressed: () {
                         playMusic();
-                        Future.delayed(Duration(milliseconds: 700), (){
+                        Future.delayed(Duration(milliseconds: 700), () {
                           Press.stop();
                         });
 //                      Navigator.of(context).pushReplacementNamed('/MenuScreen1');
@@ -83,11 +79,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding: const EdgeInsets.all(0.0),
                       child: Container(
 //
-                        padding: const EdgeInsets.only(left:30.0, right: 30.0, top: 10, bottom: 10),
-                        child: const Text(
-                            'Learn',
-                            style: TextStyle(fontSize: 40)
-                        ),
+                        padding: const EdgeInsets.only(
+                            left: 30.0, right: 30.0, top: 10, bottom: 10),
+                        child:
+                            const Text('Learn', style: TextStyle(fontSize: 40)),
 //                  shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                       ),
                     ),
@@ -96,7 +91,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
 
               Container(
-                margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.05),
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.05),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(40),
                   child: ButtonTheme(
@@ -112,11 +108,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding: const EdgeInsets.all(0.0),
                       child: Container(
 //
-                        padding: const EdgeInsets.only(left:30.0, right: 30.0, top: 10, bottom: 10),
-                        child: const Text(
-                            'Facts',
-                            style: TextStyle(fontSize: 40)
-                        ),
+                        padding: const EdgeInsets.only(
+                            left: 30.0, right: 30.0, top: 10, bottom: 10),
+                        child:
+                            const Text('Facts', style: TextStyle(fontSize: 40)),
 //                  shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                       ),
                     ),
@@ -124,9 +119,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
 
-
               Container(
-                margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.05),
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.05),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(40),
                   child: ButtonTheme(
@@ -142,11 +137,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding: const EdgeInsets.all(0.0),
                       child: Container(
 //
-                        padding: const EdgeInsets.only(left:30.0, right: 30.0, top: 10, bottom: 10),
-                        child: const Text(
-                            'Play',
-                            style: TextStyle(fontSize: 40)
-                        ),
+                        padding: const EdgeInsets.only(
+                            left: 30.0, right: 30.0, top: 10, bottom: 10),
+                        child:
+                            const Text('Play', style: TextStyle(fontSize: 40)),
 //                  shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                       ),
                     ),
@@ -156,23 +150,16 @@ class _HomeScreenState extends State<HomeScreen> {
 //            Container(
 //              child: OutlineBorderTextField(),
 //            )
-
-
-
             ],
           )
 
-
-        /* add child content here */
-      ),
+          /* add child content here */
+          ),
 //      Center(
 //        child:  Image.asset('images/flutterwithlogo.png'),
 //      ),
     );
 
 //
-
-
-
   }
 }

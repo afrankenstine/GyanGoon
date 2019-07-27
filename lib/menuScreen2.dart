@@ -12,9 +12,10 @@ class MenuScreen2 extends StatefulWidget {
 class _MenuScreen2State extends State<MenuScreen2> {
   AudioPlayer Press;
 
-  Future playMusic() async{
+  Future playMusic() async {
     Press = await AudioCache().loop("press.mp3", volume: 0.5);
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,9 +31,9 @@ class _MenuScreen2State extends State<MenuScreen2> {
             Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/logo.png"),
-                    fit: BoxFit.cover,
-                  )),
+                image: AssetImage("assets/logo.png"),
+                fit: BoxFit.cover,
+              )),
             ),
 
 //
@@ -53,7 +54,9 @@ class _MenuScreen2State extends State<MenuScreen2> {
                 Expanded(
                   child: Container(
                     margin: EdgeInsets.only(
-                        top: MediaQuery.of(context).size.height * 0.1, right: 10.0,left: 10.0 ),
+                        top: MediaQuery.of(context).size.height * 0.1,
+                        right: 10.0,
+                        left: 10.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(40),
                       child: ButtonTheme(
@@ -65,12 +68,13 @@ class _MenuScreen2State extends State<MenuScreen2> {
 //                    minWidth:200,
                           onPressed: () {
                             playMusic();
-                            Future.delayed(Duration(milliseconds: 700), (){
+                            Future.delayed(Duration(milliseconds: 700), () {
                               Press.stop();
                             });
                             Navigator.push(
                               context,
-                              CustomRoute(builder: (context) => videoScreen11()),
+                              CustomRoute(
+                                  builder: (context) => videoScreen11()),
                             );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
@@ -94,7 +98,9 @@ class _MenuScreen2State extends State<MenuScreen2> {
                 Expanded(
                   child: Container(
                     margin: EdgeInsets.only(
-                        top: MediaQuery.of(context).size.height * 0.1, right: 10.0,left: 10.0 ),
+                        top: MediaQuery.of(context).size.height * 0.1,
+                        right: 10.0,
+                        left: 10.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(40),
                       child: ButtonTheme(
@@ -127,7 +133,9 @@ class _MenuScreen2State extends State<MenuScreen2> {
                 Expanded(
                   child: Container(
                     margin: EdgeInsets.only(
-                        top: MediaQuery.of(context).size.height * 0.1, right: 10.0,left: 10.0 ),
+                        top: MediaQuery.of(context).size.height * 0.1,
+                        right: 10.0,
+                        left: 10.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(40),
                       child: ButtonTheme(
@@ -166,7 +174,9 @@ class _MenuScreen2State extends State<MenuScreen2> {
                 Expanded(
                   child: Container(
                     margin: EdgeInsets.only(
-                        top: MediaQuery.of(context).size.height * 0.075, right: 10.0,left: 10.0 ),
+                        top: MediaQuery.of(context).size.height * 0.075,
+                        right: 10.0,
+                        left: 10.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(40),
                       child: ButtonTheme(
@@ -199,7 +209,9 @@ class _MenuScreen2State extends State<MenuScreen2> {
                 Expanded(
                   child: Container(
                     margin: EdgeInsets.only(
-                        top: MediaQuery.of(context).size.height * 0.075, right: 10.0,left: 10.0 ),
+                        top: MediaQuery.of(context).size.height * 0.075,
+                        right: 10.0,
+                        left: 10.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(40),
                       child: ButtonTheme(
@@ -232,7 +244,9 @@ class _MenuScreen2State extends State<MenuScreen2> {
                 Expanded(
                   child: Container(
                     margin: EdgeInsets.only(
-                        top: MediaQuery.of(context).size.height * 0.075, right: 10.0,left: 10.0 ),
+                        top: MediaQuery.of(context).size.height * 0.075,
+                        right: 10.0,
+                        left: 10.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(40),
                       child: ButtonTheme(
@@ -265,7 +279,6 @@ class _MenuScreen2State extends State<MenuScreen2> {
 //
               ],
             ),
-
 
             Row(
               children: <Widget>[
@@ -300,16 +313,15 @@ class _MenuScreen2State extends State<MenuScreen2> {
 //                        ),
 //                      ),
 //                    ),
-                  ),
+                      ),
                 ),
-
-
-
 
                 Expanded(
                   child: Container(
                     margin: EdgeInsets.only(
-                        top: MediaQuery.of(context).size.height * 0.075, right: 10.0,left: 10.0 ),
+                        top: MediaQuery.of(context).size.height * 0.075,
+                        right: 10.0,
+                        left: 10.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(40),
                       child: ButtonTheme(
@@ -339,7 +351,6 @@ class _MenuScreen2State extends State<MenuScreen2> {
                     ),
                   ),
                 ),
-
 
                 Expanded(
                   child: Container(
@@ -372,15 +383,11 @@ class _MenuScreen2State extends State<MenuScreen2> {
 //                        ),
 //                      ),
 //                    ),
-                  ),
+                      ),
                 ),
 //
               ],
             ),
-
-
-
-
           ],
         ),
 //        floatingActionButton

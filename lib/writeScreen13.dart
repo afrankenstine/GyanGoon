@@ -11,7 +11,6 @@ import 'videoscreen14.dart';
 
 import 'custom_transition.dart';
 
-
 class WriteScreen13 extends StatefulWidget {
   @override
   _WriteScreenState createState() => _WriteScreenState();
@@ -39,9 +38,9 @@ class _WriteScreenState extends State<WriteScreen13> {
             Container(
               decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/logo.png"),
-                    fit: BoxFit.cover,
-                  )),
+                image: AssetImage("assets/logo.png"),
+                fit: BoxFit.cover,
+              )),
             ),
             Container(
               margin: EdgeInsets.only(
@@ -81,10 +80,10 @@ class _WriteScreenState extends State<WriteScreen13> {
                 _visible = false;
                 setState(() {
                   RenderBox object = context.findRenderObject();
-                  Offset _localPosition = object
-                      .globalToLocal(details.globalPosition) -
-                      Offset(MediaQuery.of(context).size.width * 0.035,
-                          MediaQuery.of(context).size.height * 0.41);
+                  Offset _localPosition =
+                      object.globalToLocal(details.globalPosition) -
+                          Offset(MediaQuery.of(context).size.width * 0.035,
+                              MediaQuery.of(context).size.height * 0.41);
                   _points = List.from(_points)..add(_localPosition);
                 });
               },
@@ -96,7 +95,7 @@ class _WriteScreenState extends State<WriteScreen13> {
                 Future.delayed(const Duration(milliseconds: 2500), () {
 //                  _points.clear();
                   setState(() {
-                    if( _visible == true){
+                    if (_visible == true) {
                       _points.clear();
                     }
 //                    _points.clear();
@@ -164,7 +163,6 @@ class _WriteScreenState extends State<WriteScreen13> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-
           showDialog(
               context: context,
               builder: (BuildContext context) {

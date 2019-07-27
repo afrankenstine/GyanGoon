@@ -5,11 +5,9 @@ import 'custom_transition.dart';
 
 import 'dart:math';
 
-
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
 import 'screenshot.dart';
-
 
 //import 'package:image_gallery_saver/image_gallery_saver.dart';
 
@@ -23,7 +21,6 @@ class WriteScreen24 extends StatefulWidget {
 bool _visible = true;
 var lst = new List(10);
 Random rnd = Random();
-
 
 class _WriteScreenState extends State<WriteScreen24> {
   List<Offset> _points = <Offset>[];
@@ -212,7 +209,6 @@ class _WriteScreenState extends State<WriteScreen24> {
                           Navigator.pop(context);
                           Navigator.pop(context);
                           Navigator.pop(context);
-
 
 //                    _points.clear();
                           // Here you can write your code for open new view

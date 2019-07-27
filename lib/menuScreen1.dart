@@ -14,9 +14,10 @@ class MenuScreen1 extends StatefulWidget {
 class _MenuScreen1State extends State<MenuScreen1> {
   AudioPlayer Press;
 
-  Future playMusic() async{
+  Future playMusic() async {
     Press = await AudioCache().loop("press.mp3", volume: 0.5);
   }
+
   @override
 // A relatively rigorous eyeball estimation.
   Duration get transitionDuration => const Duration(milliseconds: 1000);
@@ -32,19 +33,19 @@ class _MenuScreen1State extends State<MenuScreen1> {
         ),
         child: Column(
           children: <Widget>[
-
             Container(
               decoration: BoxDecoration(
-                  image: DecorationImage(image: AssetImage("assets/logo.png"),
-                    fit: BoxFit.cover,
-                  )
-              ),
+                  image: DecorationImage(
+                image: AssetImage("assets/logo.png"),
+                fit: BoxFit.cover,
+              )),
             ),
 
 //
 
             Container(
-              margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.1),
+              margin: EdgeInsets.only(
+                  top: MediaQuery.of(context).size.height * 0.1),
               child: Image.asset(
                 "assets/logo.png",
                 width: MediaQuery.of(context).size.width * 0.8,
@@ -53,10 +54,9 @@ class _MenuScreen1State extends State<MenuScreen1> {
               ),
             ),
 
-
-
             Container(
-              margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.1),
+              margin: EdgeInsets.only(
+                  top: MediaQuery.of(context).size.height * 0.1),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(40),
                 child: ButtonTheme(
@@ -68,7 +68,7 @@ class _MenuScreen1State extends State<MenuScreen1> {
 //                    minWidth:200,
                     onPressed: () {
                       playMusic();
-                      Future.delayed(Duration(milliseconds: 700), (){
+                      Future.delayed(Duration(milliseconds: 700), () {
                         Press.stop();
                       });
                       Navigator.push(
@@ -83,11 +83,10 @@ class _MenuScreen1State extends State<MenuScreen1> {
                     padding: const EdgeInsets.all(0.0),
                     child: Container(
 //
-                      padding: const EdgeInsets.only(left:30.0, right: 30.0, top: 10, bottom: 10),
-                      child: const Text(
-                          'क ख ग ',
-                          style: TextStyle(fontSize: 40)
-                      ),
+                      padding: const EdgeInsets.only(
+                          left: 30.0, right: 30.0, top: 10, bottom: 10),
+                      child:
+                          const Text('क ख ग ', style: TextStyle(fontSize: 40)),
 //                  shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                     ),
                   ),
@@ -96,7 +95,8 @@ class _MenuScreen1State extends State<MenuScreen1> {
             ),
 
             Container(
-              margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.05),
+              margin: EdgeInsets.only(
+                  top: MediaQuery.of(context).size.height * 0.05),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(40),
                 child: ButtonTheme(
@@ -112,11 +112,10 @@ class _MenuScreen1State extends State<MenuScreen1> {
                     padding: const EdgeInsets.all(0.0),
                     child: Container(
 //
-                      padding: const EdgeInsets.only(left:30.0, right: 30.0, top: 10, bottom: 10),
-                      child: const Text(
-                          'अ आ इ ',
-                          style: TextStyle(fontSize: 40)
-                      ),
+                      padding: const EdgeInsets.only(
+                          left: 30.0, right: 30.0, top: 10, bottom: 10),
+                      child:
+                          const Text('अ आ इ ', style: TextStyle(fontSize: 40)),
 //                  shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                     ),
                   ),
@@ -124,9 +123,9 @@ class _MenuScreen1State extends State<MenuScreen1> {
               ),
             ),
 
-
             Container(
-              margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.05),
+              margin: EdgeInsets.only(
+                  top: MediaQuery.of(context).size.height * 0.05),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(40),
                 child: ButtonTheme(
@@ -142,11 +141,10 @@ class _MenuScreen1State extends State<MenuScreen1> {
                     padding: const EdgeInsets.all(0.0),
                     child: Container(
 //
-                      padding: const EdgeInsets.only(left:30.0, right: 30.0, top: 10, bottom: 10),
-                      child: const Text(
-                          '१ २ ३ ',
-                          style: TextStyle(fontSize: 40)
-                      ),
+                      padding: const EdgeInsets.only(
+                          left: 30.0, right: 30.0, top: 10, bottom: 10),
+                      child:
+                          const Text('१ २ ३ ', style: TextStyle(fontSize: 40)),
 //                  shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
                     ),
                   ),
@@ -156,20 +154,17 @@ class _MenuScreen1State extends State<MenuScreen1> {
 //            Container(
 //              child: OutlineBorderTextField(),
 //            )
-
-
-
           ],
         ),
 //        floatingActionButton
-
 
         /* add child content here */
       ),
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.arrow_back),
-          onPressed:(){ Navigator.pop(context);}
-      ),
+          onPressed: () {
+            Navigator.pop(context);
+          }),
 //      Center(
 //        child:  Image.asset('images/flutterwithlogo.png'),
 //      ),

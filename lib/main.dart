@@ -30,9 +30,6 @@ import 'package:audioplayers/audioplayers.dart';
 
 import 'package:audioplayers/audio_cache.dart';
 
-
-
-
 void main() async {
 //  Flame.audio.disableLog();
 //  await Flame.audio.loadAll(<String>[
@@ -43,36 +40,35 @@ void main() async {
 ////  CustomBGM = await Flame.audio.loop('assets/bgm.ogg', volume: .25);
 //  CustomBGM= await AudioCache().loop('assets/bgm.ogg', volume: .25);
 
-
-
-
   runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
     title: 'GyanGoon',
     home: new SplashScreen(),
     routes: <String, WidgetBuilder>{
       '/HomeScreen': (BuildContext context) => new HomeScreen(),
-      '/MenuScreen1' : (BuildContext context) => MenuScreen1(),
-      '/MenuScreen2' : (BuildContext context) => MenuScreen2(),
-      '/videoScreen11' : (BuildContext context) => videoScreen11(),
-      '/WriteScreen11' : (BuildContext context) => WriteScreen11(),
-      '/videoScreen12' : (BuildContext context) => videoScreen12(),
-      '/WriteScreen12' : (BuildContext context) => WriteScreen12(),
-      '/videoScreen13' : (BuildContext context) => videoScreen13(),
-      '/WriteScreen13' : (BuildContext context) => WriteScreen13(),
-      '/videoScreen14' : (BuildContext context) => videoScreen14(),
-      '/WriteScreen14' : (BuildContext context) => WriteScreen14(),
-      '/videoScreen11' : (BuildContext context) => videoScreen21(),
-      '/WriteScreen11' : (BuildContext context) => WriteScreen21(),
-      '/videoScreen12' : (BuildContext context) => videoScreen22(),
-      '/WriteScreen12' : (BuildContext context) => WriteScreen22(),
-      '/videoScreen13' : (BuildContext context) => videoScreen23(),
-      '/WriteScreen13' : (BuildContext context) => WriteScreen23(),
-      '/videoScreen14' : (BuildContext context) => videoScreen24(),
-      '/WriteScreen14' : (BuildContext context) => WriteScreen24(),
-
+      '/MenuScreen1': (BuildContext context) => MenuScreen1(),
+      '/MenuScreen2': (BuildContext context) => MenuScreen2(),
+      '/videoScreen11': (BuildContext context) => videoScreen11(),
+      '/WriteScreen11': (BuildContext context) => WriteScreen11(),
+      '/videoScreen12': (BuildContext context) => videoScreen12(),
+      '/WriteScreen12': (BuildContext context) => WriteScreen12(),
+      '/videoScreen13': (BuildContext context) => videoScreen13(),
+      '/WriteScreen13': (BuildContext context) => WriteScreen13(),
+      '/videoScreen14': (BuildContext context) => videoScreen14(),
+      '/WriteScreen14': (BuildContext context) => WriteScreen14(),
+//      '/videoScreen15' : (BuildContext context) => videoScreen15(),
+//      '/WriteScreen15' : (BuildContext context) => WriteScreen15(),
+      '/videoScreen11': (BuildContext context) => videoScreen21(),
+      '/WriteScreen11': (BuildContext context) => WriteScreen21(),
+      '/videoScreen12': (BuildContext context) => videoScreen22(),
+      '/WriteScreen12': (BuildContext context) => WriteScreen22(),
+      '/videoScreen13': (BuildContext context) => videoScreen23(),
+      '/WriteScreen13': (BuildContext context) => WriteScreen23(),
+      '/videoScreen14': (BuildContext context) => videoScreen24(),
+      '/WriteScreen14': (BuildContext context) => WriteScreen24(),
+//      '/videoScreen25' : (BuildContext context) => videoScreen25(),
+//      '/WriteScreen25' : (BuildContext context) => WriteScreen25(),
     },
-
   ));
   BGM.attachWidgetBindingListener();
 //  await BGM.add('assets/bgm.ogg');
@@ -97,19 +93,14 @@ class _SplashScreenState extends State<SplashScreen> {
     await BGM.add('bgm.ogg');
     print("Music looped");
     BGM.play(0);
-
   }
 //  CustomBGM= await AudioCache().loop('assets/bgm.ogg', volume: .25);
-
-
 
   startTime() async {
 //    BGM.play(0);
     var _duration = Duration(seconds: 5);
     return Timer(_duration, navigationPage);
   }
-
-
 
   void navigationPage() {
 //    BGM.play(0);
@@ -132,15 +123,17 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         navigationPage();
 //        BGM.play(0);
 //        BGM.play(0);
       },
-      child: FlareActor("assets/splashscreen.flr",
-          alignment: Alignment.center,
-          fit: BoxFit.contain,
-          animation: "rotate",),
+      child: FlareActor(
+        "assets/splashscreen.flr",
+        alignment: Alignment.center,
+        fit: BoxFit.contain,
+        animation: "rotate",
+      ),
     );
   }
 }
