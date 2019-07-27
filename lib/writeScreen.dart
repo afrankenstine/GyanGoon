@@ -5,6 +5,7 @@ import 'dart:math';
 import 'videoscreen2.dart';
 
 import 'custom_transition.dart';
+import 'videoscreen.dart';
 
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
@@ -210,6 +211,12 @@ class _WriteScreenState extends State<WriteScreen> {
                             context,
                             CustomRoute(builder: (context) => videoScreen2()),
                           );
+//                          Navigator.pop(context);
+//                          Navigator.pop(context);
+//                          Navigator.push(
+//                            context,
+//                            CustomRoute(builder: (context) => videoScreen()),
+//                          );
 //                    _points.clear();
                           // Here you can write your code for open new view
                         });
