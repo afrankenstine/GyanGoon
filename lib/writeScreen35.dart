@@ -13,7 +13,7 @@ import 'screenshot.dart';
 
 //import '';
 
-class WriteScreen24 extends StatefulWidget {
+class WriteScreen35 extends StatefulWidget {
   @override
   _WriteScreenState createState() => _WriteScreenState();
 }
@@ -22,7 +22,7 @@ bool _visible = true;
 var lst = new List(10);
 Random rnd = Random();
 
-class _WriteScreenState extends State<WriteScreen24> {
+class _WriteScreenState extends State<WriteScreen35> {
   List<Offset> _points = <Offset>[];
 
   @override

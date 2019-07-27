@@ -12,7 +12,7 @@ import "package:flare_flutter/flare_actor.dart";
 import 'screenshot.dart';
 //import 'package:image_gallery_saver/image_gallery_saver.dart';
 
-class WriteScreen11 extends StatefulWidget {
+class WriteScreen72 extends StatefulWidget {
   @override
   _WriteScreen11State createState() => _WriteScreen11State();
 }
@@ -25,7 +25,7 @@ ScreenshotController screenshotController = ScreenshotController();
 //lst[1] = 13;
 //lst[2] = 11;
 
-class _WriteScreen11State extends State<WriteScreen11> {
+class _WriteScreen11State extends State<WriteScreen72> {
   List<Offset> _points = <Offset>[];
 
   @override

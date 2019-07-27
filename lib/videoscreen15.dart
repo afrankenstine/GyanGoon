@@ -10,12 +10,12 @@ import 'writeScreen11.dart';
 import 'custom_transition.dart';
 import 'writeScreen14.dart';
 
-class videoScreen14 extends StatefulWidget {
+class videoScreen15 extends StatefulWidget {
   @override
   _videoScreenState createState() => _videoScreenState();
 }
 
-class _videoScreenState extends State<videoScreen14> {
+class _videoScreenState extends State<videoScreen15> {
   VideoPlayerController playerController;
   VoidCallback listener;
 

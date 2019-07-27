@@ -11,7 +11,7 @@ import 'custom_transition.dart';
 
 import 'videoscreen13.dart';
 
-class WriteScreen12 extends StatefulWidget {
+class WriteScreen32 extends StatefulWidget {
   @override
   _WriteScreenState createState() => _WriteScreenState();
 }
@@ -20,7 +20,7 @@ bool _visible = true;
 var lst = new List(10);
 Random rnd = Random();
 
-class _WriteScreenState extends State<WriteScreen12> {
+class _WriteScreenState extends State<WriteScreen32> {
   List<Offset> _points = <Offset>[];
 
   @override
