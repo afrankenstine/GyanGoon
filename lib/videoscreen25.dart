@@ -29,7 +29,7 @@ class _videoScreenState extends State<videoScreen25> {
 
   void createVideo() {
     if (playerController == null) {
-      playerController = VideoPlayerController.asset("assets/gha.mp4")
+      playerController = VideoPlayerController.asset("assets/yan.mp4")
         ..addListener(listener)
         ..setVolume(1.0)
         ..initialize()

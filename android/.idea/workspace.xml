@@ -2,8 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9db5aeb-634d-40cd-9df2-32d4a8b70a6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.packages" beforeDir="false" afterPath="$PROJECT_DIR$/../.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assets/dha 2.flr" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lib/menuScreen2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/menuScreen2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen21.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen21.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen22.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen22.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen23.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen23.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen24.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen24.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen25.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen25.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen31.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen31.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen32.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen32.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen33.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen33.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen34.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen34.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen35.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen35.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen41.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen41.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen42.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen42.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen43.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen43.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen44.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen44.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen45.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen45.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen51.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen51.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen52.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen52.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen53.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen53.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen54.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen54.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen55.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen55.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen61.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen61.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen62.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen62.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen63.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen63.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen64.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen64.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen65.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen65.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen71.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen71.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen72.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen72.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen73.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen73.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen74.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen74.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen75.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen75.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/videoscreen76.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/videoscreen76.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lib/writeScreen11.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../lib/writeScreen11.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../test/widget_test.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,8 +153,8 @@
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1920" />
     <option name="y" value="118" />
-    <option name="width" value="572" />
-    <option name="height" value="727" />
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">

@@ -96,6 +96,7 @@ void main() async {
 ////  CustomBGM = await Flame.audio.loop('assets/bgm.ogg', volume: .25);
 //  CustomBGM= await AudioCache().loop('assets/bgm.ogg', volume: .25);
 
+
   runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
     title: 'GyanGoon',
@@ -179,6 +180,7 @@ void main() async {
     },
   ));
   BGM.attachWidgetBindingListener();
+
 //  await BGM.add('assets/bgm.ogg');
 //  BGM.play(0);
 
@@ -191,6 +193,8 @@ class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => new _SplashScreenState();
 }
+
+//var i = 0;
 
 class _SplashScreenState extends State<SplashScreen> {
 //  AudioPlayer CustomBGM;
@@ -215,7 +219,9 @@ class _SplashScreenState extends State<SplashScreen> {
     Navigator.push(
       context,
       CustomRoute(builder: (context) => HomeScreen()),
+
     );
+//    i=1;
 //    Navigator.of(context).pushReplacementNamed('/HomeScreen');
   }
 
@@ -230,6 +236,13 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+//    if( i ==1 ){
+//      Navigator.push(
+//        context,
+//        CustomRoute(builder: (context) => HomeScreen()),
+//
+//      );
+//    }
     return GestureDetector(
       onTap: () {
         navigationPage();

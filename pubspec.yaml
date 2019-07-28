@@ -23,6 +23,7 @@ flutter:
 
   assets:
   - images/flutterwithlogo.png
+  - assets/
   - splashscreen.flr
   - background.png
   - logo.png
@@ -38,6 +39,21 @@ flutter:
   - kha.mp4
   - ga.mp4
   - gha.mp4
+  - bha.flr
+  - ca.flr
+  - cha.flr
+  - DA.flr
+  - dha.flr
+  - dha2.flr
+  - GYA.flr
+  - ha.flr
+  - ja.flr
+  - jha.flr
+  - la.flr
+  - ma.flr
+
+
+
 
 
 

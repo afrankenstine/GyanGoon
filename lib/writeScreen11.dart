@@ -176,27 +176,14 @@ class _WriteScreen11State extends State<WriteScreen11> {
               context: context,
               builder: (BuildContext context) {
                 return AlertDialog(
-                  title: Text(
-                    '!!Conrattulations!!',
-                    style: new TextStyle(
-                      fontSize: 40.0,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  backgroundColor: Colors.amberAccent[10],
-                  content: SingleChildScrollView(
-                    child: ListBody(
-                      children: <Widget>[
-//                        Text('!!!!!Conrattulations!!!!!!'),
-//                        Text('Press Continue to Next Stage'),
-                      ],
-                    ),
-                  ),
-                  actions: <Widget>[
-                    RaisedButton(
-                      color: Colors.green,
-                      child: Text(
-                        'Continue',
+                  content: Container(
+                    decoration: BoxDecoration(
+                    image: DecorationImage(
+                    image: AssetImage('assets/done.png'),),),
+                        child: Center(
+                          child: RaisedButton(
+                            color: Colors.green,
+                            child: Text('Continue',
                         style: new TextStyle(
                           fontSize: 40.0,
                           color: Colors.white,
@@ -241,8 +228,79 @@ class _WriteScreen11State extends State<WriteScreen11> {
 
                         Navigator.pop(context);
                       },
-                    ),
-                  ],
+//                    ),
+                          ),
+                        ),
+                  )
+
+
+//                  title: Text(
+//                    '!!Conrattulations!!',
+//                    style: new TextStyle(
+//                      fontSize: 40.0,
+//                      color: Colors.blue,
+//                    ),
+//                  ),
+//                  backgroundColor: Colors.amberAccent[10],
+//                  content: SingleChildScrollView(
+//                    child: ListBody(
+//                      children: <Widget>[
+////                        Text('!!!!!Conrattulations!!!!!!'),
+////                        Text('Press Continue to Next Stage'),
+//                      ],
+//                    ),
+//                  ),
+//                  actions: <Widget>[
+//                    RaisedButton(
+//                      color: Colors.green,
+//                      child: Text(
+//                        'Continue',
+//                        style: new TextStyle(
+//                          fontSize: 40.0,
+//                          color: Colors.white,
+//                        ),
+//                      ),
+//                      onPressed: () {
+//                        print("Value sent to the neural net");
+////                        print(rnd.nextInt(9));
+//                        Future.delayed(const Duration(milliseconds: 100), () {
+////                  _points.clear();
+//                          Navigator.push(
+//                            context,
+//                            CustomRoute(builder: (context) => videoScreen12()),
+//                          );
+////                          Navigator.pop(context);
+////                          Navigator.pop(context);
+////                          Navigator.push(
+////                            context,
+////                            CustomRoute(builder: (context) => videoScreen()),
+////                          );
+////                    _points.clear();
+//                          // Here you can write your code for open new view
+//                        });
+//                        Future.delayed(const Duration(milliseconds: 3000), () {
+////                  _points.clear();
+//                          lst[0] = 75;
+//                          lst[1] = 77;
+//                          lst[2] = 84;
+//                          lst[3] = 81;
+//                          lst[4] = 93;
+//                          lst[5] = 85;
+//                          lst[6] = 92;
+//                          lst[7] = 96;
+//                          lst[8] = 87;
+//                          lst[9] = 90;
+//                          print(
+//                              "Value returned from neural net and stored in database");
+//                          print(lst[rnd.nextInt(9)]);
+////                    _points.clear();
+//                          // Here you can write your code for open new view
+//                        });
+//
+//                        Navigator.pop(context);
+//                      },
+//                    ),
+//                  ],
                 );
               });
 //          Navigator.push(
@@ -280,28 +338,28 @@ class Signature extends CustomPainter {
   bool shouldRepaint(Signature oldDelegate) => oldDelegate.points != points;
 }
 
-void _showDialog() {
-  // flutter defined function
-  showDialog(
-//    context: context,
-    builder: (BuildContext context) {
-      // return object of type Dialog
-      return AlertDialog(
-        title: new Text("Alert Dialog title"),
-        content: new Text("Alert Dialog body"),
-        actions: <Widget>[
-          // usually buttons at the bottom of the dialog
-          new FlatButton(
-            child: new Text("Close"),
-            onPressed: () {
-              Navigator.push(
-                context,
-                CustomRoute(builder: (context) => videoScreen12()),
-              );
-            },
-          ),
-        ],
-      );
-    },
-  );
-}
+//void _showDialog() {
+//  // flutter defined function
+//  showDialog(
+////    context: context,
+//    builder: (BuildContext context) {
+//      // return object of type Dialog
+//      return AlertDialog(
+//        title: new Text("Alert Dialog title"),
+//        content: new Text("Alert Dialog body"),
+//        actions: <Widget>[
+//          // usually buttons at the bottom of the dialog
+//          new FlatButton(
+//            child: new Text("Close"),
+//            onPressed: () {
+//              Navigator.push(
+//                context,
+//                CustomRoute(builder: (context) => videoScreen12()),
+//              );
+//            },
+//          ),
+//        ],
+//      );
+//    },
+//  );
+//}

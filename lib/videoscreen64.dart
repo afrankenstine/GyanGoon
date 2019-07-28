@@ -28,7 +28,7 @@ class _videoScreenState extends State<videoScreen64> {
 
   void createVideo() {
     if (playerController == null) {
-      playerController = VideoPlayerController.asset("assets/ka_trim.mp4")
+      playerController = VideoPlayerController.asset("assets/wo.mp4")
         ..addListener(listener)
         ..setVolume(1.0)
         ..initialize()
