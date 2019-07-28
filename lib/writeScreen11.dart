@@ -175,8 +175,10 @@ class _WriteScreen11State extends State<WriteScreen11> {
           showDialog(
               context: context,
               builder: (BuildContext context) {
-                return AlertDialog(
-                  content: Container(
+                return Dialog(
+
+                  child: Container(
+                    height:300,
                     decoration: BoxDecoration(
                     image: DecorationImage(
                     image: AssetImage('assets/done.png'),),),

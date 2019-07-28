@@ -101,7 +101,37 @@ class _HomeScreenState extends State<HomeScreen> {
                       highlightElevation: 20.0,
                       highlightColor: Colors.blue[900],
                       animationDuration: Duration(milliseconds: 400),
-                      onPressed: () {},
+                      onPressed: () {
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return Dialog(
+
+                                  child: Container(
+                                    height:300,
+                                    decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                        image: AssetImage('assets/ucns.png'),),),
+                                    child: Center(
+                                      child: RaisedButton(
+                                        color: Colors.green,
+                                        child: Text('Continue',
+                                          style: new TextStyle(
+                                            fontSize: 40.0,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        onPressed: () {
+//
+                                          Navigator.pop(context);
+                                        },
+//                    ),
+                                      ),
+                                    ),
+                                  )
+                              );
+                            });
+                      },
 //                shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
 //                  shape: StadiumBorder(),
                       textColor: Colors.white,
@@ -130,7 +160,37 @@ class _HomeScreenState extends State<HomeScreen> {
                       highlightElevation: 20.0,
                       highlightColor: Colors.blue[900],
                       animationDuration: Duration(milliseconds: 400),
-                      onPressed: () {},
+                      onPressed: () {
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return Dialog(
+
+                                  child: Container(
+                                    height:300,
+                                    decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                        image: AssetImage('assets/ucns.png'),),),
+                                    child: Center(
+                                      child: RaisedButton(
+                                        color: Colors.green,
+                                        child: Text('Continue',
+                                          style: new TextStyle(
+                                            fontSize: 40.0,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        onPressed: () {
+//
+                                          Navigator.pop(context);
+                                        },
+//                    ),
+                                      ),
+                                    ),
+                                  )
+                              );
+                            });
+                      },
 //                shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
 //                  shape: StadiumBorder(),
                       textColor: Colors.white,

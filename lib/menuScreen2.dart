@@ -4,6 +4,73 @@ import 'custom_transition.dart';
 import 'package:audioplayers/audio_cache.dart';
 import 'package:audioplayers/audioplayers.dart';
 
+
+import 'videoscreen21.dart';
+import 'writeScreen21.dart';
+import 'videoscreen22.dart';
+import 'writeScreen22.dart';
+import 'videoscreen23.dart';
+import 'writeScreen23.dart';
+import 'videoscreen24.dart';
+import 'writeScreen24.dart';
+import 'videoscreen25.dart';
+import 'writeScreen25.dart';
+import 'videoscreen31.dart';
+import 'writeScreen31.dart';
+import 'videoscreen32.dart';
+import 'writeScreen32.dart';
+import 'videoscreen33.dart';
+import 'writeScreen33.dart';
+import 'videoscreen34.dart';
+import 'writeScreen34.dart';
+import 'videoscreen35.dart';
+import 'writeScreen35.dart';
+import 'videoscreen41.dart';
+import 'writeScreen41.dart';
+import 'videoscreen42.dart';
+import 'writeScreen42.dart';
+import 'videoscreen43.dart';
+import 'writeScreen43.dart';
+import 'videoscreen44.dart';
+import 'writeScreen44.dart';
+import 'videoscreen45.dart';
+import 'writeScreen45.dart';
+import 'videoscreen51.dart';
+import 'writeScreen51.dart';
+import 'videoscreen52.dart';
+import 'writeScreen52.dart';
+import 'videoscreen53.dart';
+import 'writeScreen53.dart';
+import 'videoscreen54.dart';
+import 'writeScreen54.dart';
+import 'videoscreen55.dart';
+import 'writeScreen55.dart';
+import 'videoscreen61.dart';
+import 'writeScreen61.dart';
+import 'videoscreen62.dart';
+import 'writeScreen62.dart';
+import 'videoscreen63.dart';
+import 'writeScreen63.dart';
+import 'videoscreen64.dart';
+import 'writeScreen64.dart';
+import 'videoscreen65.dart';
+import 'writeScreen65.dart';
+import 'videoscreen71.dart';
+import 'writeScreen71.dart';
+import 'videoscreen72.dart';
+import 'writeScreen72.dart';
+import 'videoscreen73.dart';
+import 'writeScreen73.dart';
+import 'videoscreen74.dart';
+import 'writeScreen74.dart';
+import 'videoscreen75.dart';
+import 'writeScreen75.dart';
+import 'videoscreen76.dart';
+import 'writeScreen76.dart';
+
+
+
+
 class MenuScreen2 extends StatefulWidget {
   @override
   _MenuScreen2State createState() => _MenuScreen2State();
@@ -118,7 +185,7 @@ class _MenuScreen2State extends State<MenuScreen2> {
                             Navigator.push(
                               context,
                               CustomRoute(
-                                  builder: (context) => videoScreen11()),
+                                  builder: (context) => videoScreen21()),
                             );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
@@ -162,7 +229,7 @@ class _MenuScreen2State extends State<MenuScreen2> {
                             Navigator.push(
                               context,
                               CustomRoute(
-                                  builder: (context) => videoScreen11()),
+                                  builder: (context) => videoScreen31()),
                             );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
@@ -212,7 +279,7 @@ class _MenuScreen2State extends State<MenuScreen2> {
                             Navigator.push(
                               context,
                               CustomRoute(
-                                  builder: (context) => videoScreen11()),
+                                  builder: (context) => videoScreen41()),
                             );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
@@ -256,7 +323,7 @@ class _MenuScreen2State extends State<MenuScreen2> {
                             Navigator.push(
                               context,
                               CustomRoute(
-                                  builder: (context) => videoScreen11()),
+                                  builder: (context) => videoScreen51()),
                             );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
@@ -300,7 +367,7 @@ class _MenuScreen2State extends State<MenuScreen2> {
                             Navigator.push(
                               context,
                               CustomRoute(
-                                  builder: (context) => videoScreen11()),
+                                  builder: (context) => videoScreen61()),
                             );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
@@ -384,7 +451,7 @@ class _MenuScreen2State extends State<MenuScreen2> {
                             Navigator.push(
                               context,
                               CustomRoute(
-                                  builder: (context) => videoScreen11()),
+                                  builder: (context) => videoScreen71()),
                             );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },

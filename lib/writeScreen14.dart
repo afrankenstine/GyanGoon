@@ -4,7 +4,7 @@ import 'menuScreen2.dart';
 import 'custom_transition.dart';
 
 import 'dart:math';
-
+import 'videoscreen15.dart';
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
 import 'screenshot.dart';
@@ -168,74 +168,134 @@ class _WriteScreenState extends State<WriteScreen14> {
           showDialog(
               context: context,
               builder: (BuildContext context) {
-                return AlertDialog(
-                  title: Text(
-                    '\t!!Session!! \n\t!!Complete!!',
-                    style: new TextStyle(
-                      fontSize: 40.0,
-                      color: Colors.blue,
-                    ),
-                  ),
-                  backgroundColor: Colors.amberAccent[10],
-                  content: SingleChildScrollView(
-                    child: ListBody(
-                      children: <Widget>[
-//                        Text('!!!!!Conrattulations!!!!!!'),
-//                        Text('Press Continue to Next Stage'),
-                      ],
-                    ),
-                  ),
-                  actions: <Widget>[
-                    RaisedButton(
-                      color: Colors.green,
-                      child: Text(
-                        'Continue',
-                        style: new TextStyle(
-                          fontSize: 40.0,
-                          color: Colors.white,
+                return Dialog(
+
+                    child: Container(
+                      height:300,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/done.png'),),),
+                      child: Center(
+                        child: RaisedButton(
+                          color: Colors.green,
+                          child: Text('Continue',
+                            style: new TextStyle(
+                              fontSize: 40.0,
+                              color: Colors.white,
+                            ),
+                          ),
+                          onPressed: () {
+                            print("Value sent to the neural net");
+//                        print(rnd.nextInt(9));
+                            Future.delayed(const Duration(milliseconds: 100), () {
+//                  _points.clear();
+                              Navigator.push(
+                                context,
+                                CustomRoute(builder: (context) => videoScreen15()),
+                              );
+//                          Navigator.pop(context);
+//                          Navigator.pop(context);
+//                          Navigator.push(
+//                            context,
+//                            CustomRoute(builder: (context) => videoScreen()),
+//                          );
+//                    _points.clear();
+                              // Here you can write your code for open new view
+                            });
+                            Future.delayed(const Duration(milliseconds: 3000), () {
+//                  _points.clear();
+                              lst[0] = 75;
+                              lst[1] = 77;
+                              lst[2] = 84;
+                              lst[3] = 81;
+                              lst[4] = 93;
+                              lst[5] = 85;
+                              lst[6] = 92;
+                              lst[7] = 96;
+                              lst[8] = 87;
+                              lst[9] = 90;
+                              print(
+                                  "Value returned from neural net and stored in database");
+                              print(lst[rnd.nextInt(9)]);
+//                    _points.clear();
+                              // Here you can write your code for open new view
+                            });
+
+                            Navigator.pop(context);
+                          },
+//                    ),
                         ),
                       ),
-                      onPressed: () {
-                        print("Value sent to the neural net");
-//                        print(rnd.nextInt(9));
-                        Future.delayed(const Duration(milliseconds: 100), () {
-//                  _points.clear();
+                    )
+
+
+//                  title: Text(
+//                    '!!Conrattulations!!',
+//                    style: new TextStyle(
+//                      fontSize: 40.0,
+//                      color: Colors.blue,
+//                    ),
+//                  ),
+//                  backgroundColor: Colors.amberAccent[10],
+//                  content: SingleChildScrollView(
+//                    child: ListBody(
+//                      children: <Widget>[
+////                        Text('!!!!!Conrattulations!!!!!!'),
+////                        Text('Press Continue to Next Stage'),
+//                      ],
+//                    ),
+//                  ),
+//                  actions: <Widget>[
+//                    RaisedButton(
+//                      color: Colors.green,
+//                      child: Text(
+//                        'Continue',
+//                        style: new TextStyle(
+//                          fontSize: 40.0,
+//                          color: Colors.white,
+//                        ),
+//                      ),
+//                      onPressed: () {
+//                        print("Value sent to the neural net");
+////                        print(rnd.nextInt(9));
+//                        Future.delayed(const Duration(milliseconds: 100), () {
+////                  _points.clear();
+//                          Navigator.push(
+//                            context,
+//                            CustomRoute(builder: (context) => videoScreen12()),
+//                          );
+////                          Navigator.pop(context);
+////                          Navigator.pop(context);
+////                          Navigator.push(
+////                            context,
+////                            CustomRoute(builder: (context) => videoScreen()),
+////                          );
+////                    _points.clear();
+//                          // Here you can write your code for open new view
+//                        });
+//                        Future.delayed(const Duration(milliseconds: 3000), () {
+////                  _points.clear();
+//                          lst[0] = 75;
+//                          lst[1] = 77;
+//                          lst[2] = 84;
+//                          lst[3] = 81;
+//                          lst[4] = 93;
+//                          lst[5] = 85;
+//                          lst[6] = 92;
+//                          lst[7] = 96;
+//                          lst[8] = 87;
+//                          lst[9] = 90;
+//                          print(
+//                              "Value returned from neural net and stored in database");
+//                          print(lst[rnd.nextInt(9)]);
+////                    _points.clear();
+//                          // Here you can write your code for open new view
+//                        });
 //
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-
-//                    _points.clear();
-                          // Here you can write your code for open new view
-                        });
-                        Future.delayed(const Duration(milliseconds: 3000), () {
-//                  _points.clear();
-                          lst[0] = 75;
-                          lst[1] = 77;
-                          lst[2] = 84;
-                          lst[3] = 81;
-                          lst[4] = 93;
-                          lst[5] = 85;
-                          lst[6] = 92;
-                          lst[7] = 96;
-                          lst[8] = 87;
-                          lst[9] = 90;
-                          print(
-                              "Value returned from neural net and stored in database");
-                          print(lst[rnd.nextInt(9)]);
-//                    _points.clear();
-                          // Here you can write your code for open new view
-                        });
-
-                        Navigator.pop(context);
-                      },
-                    ),
-                  ],
+//                        Navigator.pop(context);
+//                      },
+//                    ),
+//                  ],
                 );
               });
         },
