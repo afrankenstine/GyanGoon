@@ -101,7 +101,7 @@ class _SplashScreenState extends State<SplashScreen> {
     var _duration = Duration(seconds: 5);
     return Timer(_duration, navigationPage);
   }
-
+// returns starting time
   void navigationPage() {
 //    BGM.play(0);
     Navigator.push(
