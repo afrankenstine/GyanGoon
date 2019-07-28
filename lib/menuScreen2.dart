@@ -111,6 +111,15 @@ class _MenuScreen2State extends State<MenuScreen2> {
                           animationDuration: Duration(milliseconds: 400),
 //                    minWidth:200,
                           onPressed: () {
+                            playMusic();
+                            Future.delayed(Duration(milliseconds: 700), () {
+                              Press.stop();
+                            });
+                            Navigator.push(
+                              context,
+                              CustomRoute(
+                                  builder: (context) => videoScreen11()),
+                            );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
 //                shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
@@ -146,6 +155,15 @@ class _MenuScreen2State extends State<MenuScreen2> {
                           animationDuration: Duration(milliseconds: 400),
 //                    minWidth:200,
                           onPressed: () {
+                            playMusic();
+                            Future.delayed(Duration(milliseconds: 700), () {
+                              Press.stop();
+                            });
+                            Navigator.push(
+                              context,
+                              CustomRoute(
+                                  builder: (context) => videoScreen11()),
+                            );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
 //                shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
@@ -187,6 +205,15 @@ class _MenuScreen2State extends State<MenuScreen2> {
                           animationDuration: Duration(milliseconds: 400),
 //                    minWidth:200,
                           onPressed: () {
+                            playMusic();
+                            Future.delayed(Duration(milliseconds: 700), () {
+                              Press.stop();
+                            });
+                            Navigator.push(
+                              context,
+                              CustomRoute(
+                                  builder: (context) => videoScreen11()),
+                            );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
 //                shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
@@ -222,6 +249,15 @@ class _MenuScreen2State extends State<MenuScreen2> {
                           animationDuration: Duration(milliseconds: 400),
 //                    minWidth:200,
                           onPressed: () {
+                            playMusic();
+                            Future.delayed(Duration(milliseconds: 700), () {
+                              Press.stop();
+                            });
+                            Navigator.push(
+                              context,
+                              CustomRoute(
+                                  builder: (context) => videoScreen11()),
+                            );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
 //                shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
@@ -257,6 +293,15 @@ class _MenuScreen2State extends State<MenuScreen2> {
                           animationDuration: Duration(milliseconds: 400),
 //                    minWidth:200,
                           onPressed: () {
+                            playMusic();
+                            Future.delayed(Duration(milliseconds: 700), () {
+                              Press.stop();
+                            });
+                            Navigator.push(
+                              context,
+                              CustomRoute(
+                                  builder: (context) => videoScreen11()),
+                            );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
 //                shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
@@ -332,6 +377,15 @@ class _MenuScreen2State extends State<MenuScreen2> {
                           animationDuration: Duration(milliseconds: 400),
 //                    minWidth:200,
                           onPressed: () {
+                            playMusic();
+                            Future.delayed(Duration(milliseconds: 700), () {
+                              Press.stop();
+                            });
+                            Navigator.push(
+                              context,
+                              CustomRoute(
+                                  builder: (context) => videoScreen11()),
+                            );
 //                        Navigator.of(context).pushReplacementNamed('/MenuScreen1');
                           },
 //                shape:  RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
