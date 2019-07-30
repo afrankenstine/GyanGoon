@@ -8,7 +8,7 @@ import 'package:video_player/video_player.dart';
 //import 'menuScreen2.dart';
 import 'writeScreen11.dart';
 import 'custom_transition.dart';
-import 'writeScreen13.dart';
+import 'writeScreen23.dart';
 
 class videoScreen23 extends StatefulWidget {
   @override
@@ -135,7 +135,7 @@ class _videoScreenState extends State<videoScreen23> {
         onPressed: () {
           Navigator.push(
             context,
-            CustomRoute(builder: (context) => WriteScreen13()),
+            CustomRoute(builder: (context) => WriteScreen23()),
           );
         },
         child: Icon(Icons.arrow_forward),

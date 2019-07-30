@@ -6,7 +6,7 @@ import 'package:video_player/video_player.dart';
 //import "package:flare_flutter/flare_actor.dart";
 //import 'menuScreen1.dart';
 //import 'menuScreen2.dart';
-import 'writeScreen11.dart';
+import 'writeScreen72.dart';
 import 'custom_transition.dart';
 
 class videoScreen72 extends StatefulWidget {
@@ -134,7 +134,7 @@ class _videoScreenState extends State<videoScreen72> {
         onPressed: () {
           Navigator.push(
             context,
-            CustomRoute(builder: (context) => WriteScreen11()),
+            CustomRoute(builder: (context) => WriteScreen72()),
           );
         },
         child: Icon(Icons.arrow_forward),
