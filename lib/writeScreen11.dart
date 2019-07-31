@@ -97,6 +97,7 @@ class _WriteScreen11State extends State<WriteScreen11> {
                 },
 
                 onPanEnd: (DragEndDetails details) {
+
                   _visible = true;
                   _points.add(null);
 
