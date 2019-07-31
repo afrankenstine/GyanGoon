@@ -9,7 +9,7 @@ import 'screenshot.dart';
 
 import 'custom_transition.dart';
 
-import 'videoscreen13.dart';
+import 'videoscreen23.dart';
 
 class WriteScreen22 extends StatefulWidget {
   @override
@@ -200,7 +200,7 @@ class _WriteScreenState extends State<WriteScreen22> {
 //                  _points.clear();
                           Navigator.push(
                             context,
-                            CustomRoute(builder: (context) => videoScreen13()),
+                            CustomRoute(builder: (context) => videoScreen23()),
                           );
 //                    _points.clear();
                           // Here you can write your code for open new view

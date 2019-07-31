@@ -9,6 +9,9 @@ import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
 import 'screenshot.dart';
 
+import 'videoscreen35.dart';
+
+
 //import 'package:image_gallery_saver/image_gallery_saver.dart';
 
 //import '';
@@ -200,16 +203,10 @@ class _WriteScreenState extends State<WriteScreen34> {
 //                        print(rnd.nextInt(9));
                         Future.delayed(const Duration(milliseconds: 100), () {
 //                  _points.clear();
-//
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-                          Navigator.pop(context);
-
+                          Navigator.push(
+                            context,
+                            CustomRoute(builder: (context) => videoScreen35()),
+                          );
 //                    _points.clear();
                           // Here you can write your code for open new view
                         });

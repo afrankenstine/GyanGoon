@@ -5,7 +5,7 @@ import 'dart:math';
 import 'videoscreen12.dart';
 
 import 'custom_transition.dart';
-import 'videoscreen11.dart';
+import 'videoscreen22.dart';
 
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
@@ -198,7 +198,7 @@ class _WriteScreenState extends State<WriteScreen21> {
 //                  _points.clear();
                               Navigator.push(
                                 context,
-                                CustomRoute(builder: (context) => videoScreen13()),
+                                CustomRoute(builder: (context) => videoScreen22()),
                               );
 //                          Navigator.pop(context);
 //                          Navigator.pop(context);
@@ -356,7 +356,7 @@ void _showDialog() {
             onPressed: () {
               Navigator.push(
                 context,
-                CustomRoute(builder: (context) => videoScreen12()),
+                CustomRoute(builder: (context) => videoScreen22()),
               );
             },
           ),

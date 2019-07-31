@@ -209,6 +209,8 @@ class _WriteScreenState extends State<WriteScreen25> {
                           Navigator.pop(context);
                           Navigator.pop(context);
                           Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
 
 //                    _points.clear();
                           // Here you can write your code for open new view

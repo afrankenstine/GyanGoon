@@ -7,7 +7,7 @@ import "package:flare_flutter/flare_actor.dart";
 import 'screenshot.dart';
 //import 'package:image_gallery_saver/image_gallery_saver.dart';
 
-import 'videoscreen14.dart';
+import 'videoscreen34.dart';
 
 import 'custom_transition.dart';
 
@@ -200,7 +200,7 @@ class _WriteScreenState extends State<WriteScreen33> {
 //                  _points.clear();
                           Navigator.push(
                             context,
-                            CustomRoute(builder: (context) => videoScreen14()),
+                            CustomRoute(builder: (context) => videoScreen34()),
                           );
 //                    _points.clear();
                           // Here you can write your code for open new view
