@@ -5,7 +5,7 @@ import 'dart:math';
 import 'videoscreen12.dart';
 
 import 'custom_transition.dart';
-import 'videoscreen11.dart';
+import 'videoscreen74.dart';
 
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
@@ -209,7 +209,7 @@ class _WriteScreen11State extends State<WriteScreen73> {
 //                  _points.clear();
                           Navigator.push(
                             context,
-                            CustomRoute(builder: (context) => videoScreen12()),
+                            CustomRoute(builder: (context) => videoScreen74()),
                           );
 //                          Navigator.pop(context);
 //                          Navigator.pop(context);

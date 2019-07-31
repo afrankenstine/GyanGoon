@@ -207,10 +207,20 @@ class _WriteScreen11State extends State<WriteScreen65> {
 //                        print(rnd.nextInt(9));
                         Future.delayed(const Duration(milliseconds: 100), () {
 //                  _points.clear();
-                          Navigator.push(
-                            context,
-                            CustomRoute(builder: (context) => videoScreen12()),
-                          );
+//                          Navigator.push(
+//                            context,
+//                            CustomRoute(builder: (context) => videoScreen12()),
+//                          );
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
+                          Navigator.pop(context);
 //                          Navigator.pop(context);
 //                          Navigator.pop(context);
 //                          Navigator.push(

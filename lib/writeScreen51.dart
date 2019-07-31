@@ -5,7 +5,7 @@ import 'dart:math';
 import 'videoscreen12.dart';
 
 import 'custom_transition.dart';
-import 'videoscreen11.dart';
+import 'videoscreen52.dart';
 
 import 'package:flutter/material.dart';
 import "package:flare_flutter/flare_actor.dart";
@@ -209,7 +209,7 @@ class _WriteScreen11State extends State<WriteScreen51> {
 //                  _points.clear();
                           Navigator.push(
                             context,
-                            CustomRoute(builder: (context) => videoScreen12()),
+                            CustomRoute(builder: (context) => videoScreen52()),
                           );
 //                          Navigator.pop(context);
 //                          Navigator.pop(context);
@@ -294,10 +294,10 @@ void _showDialog() {
           new FlatButton(
             child: new Text("Close"),
             onPressed: () {
-              Navigator.push(
-                context,
-                CustomRoute(builder: (context) => videoScreen12()),
-              );
+//              Navigator.push(
+//                context,
+//                CustomRoute(builder: (context) => videoScreen12()),
+//              );
             },
           ),
         ],
