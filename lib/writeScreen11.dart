@@ -18,6 +18,7 @@ class WriteScreen11 extends StatefulWidget {
 }
 
 bool _visible = true;
+bool _clear = false;
 var lst = new List(10);
 Random rnd = Random();
 ScreenshotController screenshotController = ScreenshotController();
