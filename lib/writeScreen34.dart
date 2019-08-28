@@ -137,7 +137,7 @@ class _WriteScreenState extends State<WriteScreen34> {
                   ),
                   height: MediaQuery.of(context).size.height * 0.5,
                   padding: EdgeInsets.all(20),
-                  child: FlareActor("assets/gha.flr",
+                  child: FlareActor("assets/ढ.flr",
                       alignment: Alignment.center,
                       fit: BoxFit.contain,
                       animation: "Untitled"),
