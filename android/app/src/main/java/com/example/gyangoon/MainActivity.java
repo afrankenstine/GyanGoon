@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.gyangoon.DigitsDetector;
+//import com.example.gyangoon.DigitsDetector;
 
 //import ai.fritz.tflitedemo.ml.DigitsDetector;
 //import ai.fritz.tflitedemo.ui.PaintView;+
@@ -31,7 +31,7 @@ import io.flutter.plugins.GeneratedPluginRegistrant;
 public class MainActivity extends FlutterActivity {
 
     private static final int PIXEL_WIDTH = 32;
-    private DigitsDetector mnistClassifier;
+//    private DigitsDetector mnistClassifier;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
